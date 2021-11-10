@@ -6,6 +6,7 @@
     "dev": "NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next build && next start",
+    "export": "next export",
     "static": "next build && next export",
     "lint": "next lint",
     "format": "npx prettier --write '**/*.tsx' '**/*.ts'"
