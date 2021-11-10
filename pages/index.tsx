@@ -53,7 +53,7 @@ export default function Home() {
         <div className='grid grid-flow-row gap-6'>
           <h1 className='text-center text-secondary-light font-bold text-4xl mb-6'>How it works?</h1>
 
-          <div className='grid grid-flow-row gap-4 2xl:gap-56'>
+          <div className='grid grid-flow-row gap-4 2xl:gap-8'>
             <p>{projectHow.description}</p>
 
             <span className='mt-8'>
