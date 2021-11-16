@@ -19,28 +19,30 @@ export const BulletPointCard = ({ item }) => {
 }
 
 interface GetStartedDownloadCardT {
-  index: number,
-  title: string,
+  index: number
+  title: string
   description?: string
   action?: {
-    isEnable: boolean,
-    title: string,
+    isEnable: boolean
+    title: string
     url: string
   }
 }
 
 export const GetStartedDownloadCard = ({ index, title, action, description }: GetStartedDownloadCardT) => {
-  return <div className="flex flex-row justify-start gap-1" key={index}>
-    <span className="text-secondary-light font-bold text-2xl -mt-1">{index}</span>
-    <div className='grid grid-flow-row place-content-start justify-items-start gap-2'>
-      <span className='text-lg font-bold'>{title}</span>
+  return (
+    <div className='flex flex-row justify-start gap-1' key={index}>
+      <span className='text-secondary-light font-bold text-2xl -mt-1'>{index}</span>
+      <div className='grid grid-flow-row place-content-start justify-items-start gap-2'>
+        <span className='text-lg font-bold'>{title}</span>
 
-      <p className='text-secondary-light'>{description}</p>
-      {action && action.isEnable
-        && <a className='p-2 bg-primary self-start text-xs font-bold' href={action.url} target='_blank' rel="noreferrer">
-          {action.title}
-        </a>
-      }
+        <p className='text-secondary-light'>{description}</p>
+        {action && action.isEnable && (
+          <a className='p-2 bg-primary self-start text-xs font-bold' href={action.url} target='_blank' rel='noreferrer'>
+            {action.title}
+          </a>
+        )}
+      </div>
     </div>
-  </div>
+  )
 }

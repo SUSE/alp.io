@@ -68,8 +68,10 @@ export default function Home() {
         <div className='grid grid-flow-row gap-6'>
           <h1 className='text-center text-secondary-light font-bold text-4xl mb-6'>Get started</h1>
 
-          <div className="grid grid-flow-row md:grid-flow-col gap-4 bg-secondary-dark p-4 text-white ">
-            {projectGetStarted.map((ele, i) => <GetStartedDownloadCard key={i} index={i + 1} {...ele} />)}
+          <div className='grid grid-flow-row md:grid-flow-col gap-4 bg-secondary-dark p-4 text-white '>
+            {projectGetStarted.map((ele, i) => (
+              <GetStartedDownloadCard key={i} index={i + 1} {...ele} />
+            ))}
           </div>
         </div>
       </main>

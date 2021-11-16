@@ -30,7 +30,8 @@ export const Header = () => {
             x: -200,
             opacity: 1,
           }}
-          animate={{ x: 0, opacity: 1 }}>
+          animate={{ x: 0, opacity: 1 }}
+        >
           <DecorationLineSVG className='max-w-full h-2' />
         </motion.div>
       </div>

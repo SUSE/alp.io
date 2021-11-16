@@ -12,7 +12,8 @@ export const CtaBox = ({ title, children }) => {
         opacity: 0,
       }}
       animate={{ x: 0, opacity: 1 }}
-      className='grid grid-gap-4 bg-blue-500 text-white '>
+      className='grid grid-gap-4 bg-blue-500 text-white '
+    >
       <div className='p-8'>
         <h1 className='text-2xl font-bold mb-2'>{title}</h1>
         <p>{children}</p>

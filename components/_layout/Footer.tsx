@@ -10,7 +10,7 @@ export const Footer = () => {
           <SuseLogoSVG className='w-40 h-20 fill-current text-white' />
           <div className='flex gap-2 flex-wrap'>
             {projectFooterLinks.map((ele) => (
-              <a className='font-bold' key={ele.title} href={ele.href} target='_blank' rel="noreferrer">
+              <a className='font-bold' key={ele.title} href={ele.href} target='_blank' rel='noreferrer'>
                 {ele.title}
               </a>
             ))}
@@ -18,6 +18,6 @@ export const Footer = () => {
         </div>
         <span className='border border-gray-400 border-dotted'></span>
       </div>
-    </div >
+    </div>
   )
 }
