@@ -11,6 +11,7 @@ export const PROJECT_CONFIGURATION = {
     title: 'About Project Name',
     description: 'In-memory image reduces upgrade overhead  (minimized system upgrade impact) easy installer wizard for persistent disk and other tooling.'
   },
+  // ℹ️ No more than 3 items for a better structure.
   projectBulletPoints: [
     'Building, running, pushing, and pulling containers',
     'Running your choice of Kubernetes versions',
@@ -18,6 +19,7 @@ export const PROJECT_CONFIGURATION = {
   ],
   projectRepoURL: 'URL',
   projectDocumentationURL: 'URL',
+  // ℹ️ No more than 3 items for a better structure.
   projectWhy: [
     {
       icon: <CloudSVG />,
@@ -38,18 +40,38 @@ export const PROJECT_CONFIGURATION = {
   projectHow: {
     description: 'Rancher Desktop is an electron based application that wraps other tools while itself providing the user experience to create a simple experience. On MacOS Rancher Desktop leverages a virtual machine to run containerd and Kubernetes. Windows Subsystem for Linux v2 is leveraged for Windows systems. All you need to do is download and run the application.'
   },
+  // ℹ️ No more than 3 items for a better structure.
+  projectGetStarted: [
+    {
+      title: 'Download Rancher Desktop',
+      action: {
+        isEnable: true,
+        title: 'Install Rancher Desktop',
+        url: '#'
+      }
+    },
+    {
+      title: 'Run The App',
+      description: 'Run the app you downloaded and it will take care of the rest.',
+      action: {
+        isEnable: false,
+        title: '',
+        url: ''
+      }
+    }
+  ],
   projectFooterLinks: [
     {
       title: 'Carrera',
-      href: 'www.google.com',
+      href: 'http://www.google.com',
     },
     {
       title: 'Legal',
-      href: 'www.google.com',
+      href: 'http://www.google.com',
     },
     {
       title: 'Feedback',
-      href: 'www.google.com',
+      href: 'http://www.google.com',
     },
   ]
 }

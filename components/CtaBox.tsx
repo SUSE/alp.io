@@ -22,7 +22,7 @@ export const CtaBox = ({ title, children }) => {
         {projectRepoURL && (
           <a href={projectRepoURL} target='_blank' rel='noreferrer'>
             <span className='flex justify-center'>
-              <BranchSVG className='w-6 h-6' />
+              <BranchSVG className='w-6 h-6 fill-current text-primary' />
             </span>
             <span className='text-xs'>Repository</span>
           </a>
@@ -30,7 +30,7 @@ export const CtaBox = ({ title, children }) => {
         {projectDocumentationURL && (
           <a href={projectRepoURL} target='_blank' rel='noreferrer'>
             <span className='flex justify-center'>
-              <DocumentationSVG className='w-6 h-6' />
+              <DocumentationSVG className='w-6 h-6 fill-current text-primary' />
             </span>
             <span className='text-xs'>Documentation</span>
           </a>
