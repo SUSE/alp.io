@@ -1,21 +1,9 @@
-## General
-
-TypeScript base with Next.js as React Framework, Tailwind CSS as Style Framework, and Zustand for State Management.
-
-Features:
-
-- Enabled JIT for Tailwind
-- Absolute Imports and Module path aliases for Next.js
-- Initial state example for Zustand
-
-Other depedencies:
-
-- Zustand: https://github.com/pmndrs/zustand
-- Tailwind CSS: https://tailwindcss.com/
+# Important!
+This is a POC and it's not ready for production.
 
 ## Getting Started
-
-First, run the development server:
+Requieres Node.js
+For development, please run the following commands:
 
 ```bash
 npm install
@@ -24,6 +12,7 @@ npm run dev
 # or
 yarn dev
 ```
+
 
 ## Build for production
 
