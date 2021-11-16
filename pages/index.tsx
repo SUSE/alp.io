@@ -1,10 +1,10 @@
 import { motionListItems } from '@/assets/animations'
 import HowItWorksSVG from '@/assets/how_it_works.svg'
+import { DecorationLineSVG } from '@/assets/images'
 import { BulletPointCard, GetStartedDownloadCard } from '@/components/Cards'
 import { CtaBox } from '@/components/CtaBox'
 import { PROJECT_CONFIGURATION } from '@/db/project-info'
 import { motion } from 'framer-motion'
-import { DecorationLineSVG } from '@/assets/images'
 import Head from 'next/head'
 
 export default function Home() {
