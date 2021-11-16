@@ -4,6 +4,7 @@ import { BulletPointCard, GetStartedDownloadCard } from '@/components/Cards'
 import { CtaBox } from '@/components/CtaBox'
 import { PROJECT_CONFIGURATION } from '@/db/project-info'
 import { motion } from 'framer-motion'
+import { DecorationLineSVG } from '@/assets/images'
 import Head from 'next/head'
 
 export default function Home() {
@@ -65,13 +66,24 @@ export default function Home() {
         </div>
 
         {/** 👀 Call to action */}
-        <div className='grid grid-flow-row gap-6'>
+        <div className='grid grid-flow-row gap-6 '>
           <h1 className='text-center text-secondary-light font-bold text-4xl mb-6'>Get started</h1>
 
-          <div className='grid grid-flow-row md:grid-flow-col gap-4 bg-secondary-dark p-4 text-white '>
+          <div className='relative grid grid-flow-row md:grid-flow-col gap-4 bg-secondary-dark px-6 py-10 text-white '>
             {projectGetStarted.map((ele, i) => (
               <GetStartedDownloadCard key={i} index={i + 1} {...ele} />
             ))}
+            <div className='absolute w-full bottom-0'>
+              <motion.div
+                initial={{
+                  x: -200,
+                  opacity: 1,
+                }}
+                animate={{ x: 0, opacity: 1 }}
+              >
+                <DecorationLineSVG className='max-w-full h-2' />
+              </motion.div>
+            </div>
           </div>
         </div>
       </main>
