@@ -62,7 +62,7 @@ export const PROJECT_CONFIGURATION = {
   ],
   projectFooterLinks: [
     {
-      title: 'Carrera',
+      title: 'Carrer',
       href: 'http://www.google.com',
     },
     {
