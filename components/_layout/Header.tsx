@@ -3,13 +3,30 @@ import ProjectLogo from '@/assets/logo.svg'
 import { PROJECT_CONFIGURATION } from '@/db/project-info'
 import { motion } from 'framer-motion'
 export const Header = () => {
-  const { projectTitle, projectSubtitle, projectVideo } = PROJECT_CONFIGURATION
+  const { projectTitle, projectSubtitle, projectNavigation } = PROJECT_CONFIGURATION
 
   return (
-    <div className='relative bg-secondary-dark text-white py-14'>
+    <div className='relative bg-secondary-dark text-white py-6'>
       {/* Header content */}
-      <div className='grid grid-flow-row md:grid-flow-row mx-auto w-5/6 2xl:w-3/6 gap-24 items-center justify-between'>
+
+      <div className='grid grid-flow-row md:grid-flow-row mx-auto w-5/6 2xl:w-3/6 pb-6  items-center justify-between'>
         {/* Main Header */}
+        <div className='flex justify-end gap-3 items-center'>
+          <div className='flex text-base font-bold gap-2 hover:underline'>
+            {projectNavigation.links.map((link) => (
+              <a key={link.title} href={link.href} target='_blank' rel='noreferrer'>
+                {link.title}
+              </a>
+            ))}
+          </div>
+          <div className='flex gap-2'>
+            {projectNavigation.social.map((socialMedia, i) => (
+              <a key={i} href={socialMedia.url} target='_blank' rel='noreferrer'>
+                {<socialMedia.icon className='w-5 h-5 fill-current' />}
+              </a>
+            ))}
+          </div>
+        </div>
         <div className='grid grid-row-2 md:grid-cols-2 gap-8 justify-between'>
           <div className='grid gap-4'>
             <div className='flex items-center gap-4'>
@@ -18,9 +35,6 @@ export const Header = () => {
               <h1 className='text-5xl font-bold'>{projectTitle}</h1>
             </div>
             <span className='text-xl font-body text-secondary-light'>{projectSubtitle}</span>
-          </div>
-          <div className='grid align-middle self-center'>
-            {projectVideo.isEnable && <div className='h-full p-4 bg-secondary-light'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid molestias ad explicabo illum amet. Veritatis aliquam corrupti inventore, ducimus consectetur officiis, ut culpa assumenda omnis nihil beatae, fugiat error est!</div>}
           </div>
         </div>
       </div>

@@ -4,12 +4,13 @@ import { DecorationLineSVG } from '@/assets/images'
 import { BulletPointCard, GetStartedDownloadCard } from '@/components/Cards'
 import { Collapse } from '@/components/Collapse'
 import { CtaBox } from '@/components/CtaBox'
+import { SponsorsList } from '@/components/Sponsors'
 import { PROJECT_CONFIGURATION } from '@/db/project-info'
 import { motion } from 'framer-motion'
 import Head from 'next/head'
 export default function Home() {
   /** 👀 Texts are generating from `db/project-info.js` file. There you can fill all the information related to the project such as name, description, call to action messages, repository/documentation URL, etc. */
-  const { projectTitle, projectSubtitle, projectWhy, projectHow, projectGetStarted, projectFAQ } = PROJECT_CONFIGURATION
+  const { projectTitle, projectSubtitle, projectWhy, projectHow, projectGetStarted, projectFAQ, projectSponsors } = PROJECT_CONFIGURATION
 
   return (
     <div>
@@ -22,7 +23,7 @@ export default function Home() {
 
       <main className={'grid grid-flow-row gap-24 m-[22px]'}>
         {/** 👀 Call to Action section */}
-        <div className='grid grid-flow-row md:grid-flow-col gap-14'>
+        <div className='grid grid-row-2 md:grid-cols-2 gap-14'>
           {/** 👀 Call to Action Box */}
           <CtaBox title={`${PROJECT_CONFIGURATION.projectCta.title}`}>{PROJECT_CONFIGURATION.projectCta.description}</CtaBox>
           <motion.div initial='hidden' animate='visible' variants={motionListItems} className='grid grid-flow-row gap-4'>
@@ -87,12 +88,21 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='grid grid-flow-row gap-6 '>
-          <p className='text-center text-secondary-light font-bold text-4xl mb-6'>FAQ</p>
-          <Collapse
-            elements={projectFAQ}
-          />
-        </div>
+        {/** 👀 FAQ Section */}
+        {projectFAQ.isEnabled && (
+          <div className='grid grid-flow-row gap-6 '>
+            <p className='text-center text-secondary-light font-bold text-4xl mb-6'>FAQ</p>
+            <Collapse elements={projectFAQ.elements} />
+          </div>
+        )}
+
+        {/** 👀 Sponsors */}
+        {projectSponsors.isEnable && (
+          <div className='grid grid-flow-row gap-6 '>
+            <p className='text-center text-secondary-light font-bold text-4xl mb-6'>Sponsors</p>
+            <SponsorsList sponsors={projectSponsors.elements} />
+          </div>
+        )}
       </main>
     </div>
   )

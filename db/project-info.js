@@ -1,11 +1,35 @@
-import { CloudSVG, TorchSVG, ContainerSVG } from '@/assets/images'
+import { CloudSVG, TorchSVG, ContainerSVG, GithubSVG, TwitterSVG } from '@/assets/images'
+import AWS_LOGO from '@/assets/sponsors/aws.svg'
+import AZURE_LOOG from '@/assets/sponsors/azure.svg'
 
 export const PROJECT_CONFIGURATION = {
   projectTitle: 'Project Name',
   projectSubtitle: 'Short project description, it will be used on the header',
+  projectNavigation: {
+    links: [
+      {
+        title: 'Documentation',
+        href: 'https://www.google.com'
+      },
+      {
+        title: 'Blog',
+        href: 'https://www.google.com'
+      }
+    ],
+    social: [
+      {
+        url: 'https://www.google.com',
+        icon: GithubSVG
+      },
+      {
+        url: 'https://www.google.com',
+        icon: TwitterSVG
+      }
+    ]
+  },
   projectVideo: {
-    isEnable: false,
-    youtubeUrl: ''
+    isEnable: true,
+    youtubeUrl: 'https://www.youtube.com/watch?v=6pYrg92TOWo'
   },
   projectCta: {
     title: 'About Project Name',
@@ -60,27 +84,63 @@ export const PROJECT_CONFIGURATION = {
       }
     }
   ],
-  projectFAQ: [
-    {
-      title: 'What is SUSE eLearning?',
-      description: 'SUSE eLearning is your on-demand library of all SUSE technical training. A yearly subscription to SUSE eLearning gives you access to limitless learning to the entire library of SUSE training — anywhere, anytime — with immediate access to updated courseware.',
-    },
-    {
-      title: 'What is SUSE eLearning?',
-      description: 'SUSE eLearning is your on-demand library of all SUSE technical training. A yearly subscription to SUSE eLearning gives you access to limitless learning to the entire library of SUSE training — anywhere, anytime — with immediate access to updated courseware.',
-    },
-    {
-      title: 'What is SUSE eLearning?',
-      description: 'SUSE eLearning is your on-demand library of all SUSE technical training. A yearly subscription to SUSE eLearning gives you access to limitless learning to the entire library of SUSE training — anywhere, anytime — with immediate access to updated courseware.',
-    },
-    {
-      title: 'What is SUSE eLearning?',
-      description: 'SUSE eLearning is your on-demand library of all SUSE technical training. A yearly subscription to SUSE eLearning gives you access to limitless learning to the entire library of SUSE training — anywhere, anytime — with immediate access to updated courseware.',
-    },
-  ],
-  projectSponsors: [
-
-  ],
+  projectFAQ: {
+    isEnabled: true,
+    elements:
+      [
+        {
+          title: 'What is SUSE eLearning?',
+          description: 'SUSE eLearning is your on-demand library of all SUSE technical training. A yearly subscription to SUSE eLearning gives you access to limitless learning to the entire library of SUSE training — anywhere, anytime — with immediate access to updated courseware.',
+        },
+        {
+          title: 'What is SUSE eLearning?',
+          description: 'SUSE eLearning is your on-demand library of all SUSE technical training. A yearly subscription to SUSE eLearning gives you access to limitless learning to the entire library of SUSE training — anywhere, anytime — with immediate access to updated courseware.',
+        },
+        {
+          title: 'What is SUSE eLearning?',
+          description: 'SUSE eLearning is your on-demand library of all SUSE technical training. A yearly subscription to SUSE eLearning gives you access to limitless learning to the entire library of SUSE training — anywhere, anytime — with immediate access to updated courseware.',
+        },
+        {
+          title: 'What is SUSE eLearning?',
+          description: 'SUSE eLearning is your on-demand library of all SUSE technical training. A yearly subscription to SUSE eLearning gives you access to limitless learning to the entire library of SUSE training — anywhere, anytime — with immediate access to updated courseware.',
+        },
+      ]
+  },
+  projectSponsors: {
+    isEnable: true,
+    elements: [
+      {
+        sponsor: 'aws',
+        href: 'http://www.google.com',
+        logo: AWS_LOGO
+      },
+      {
+        sponsor: 'azure',
+        href: 'http://www.google.com',
+        logo: AZURE_LOOG,
+      },
+      {
+        sponsor: 'aws',
+        href: 'http://www.google.com',
+        logo: AWS_LOGO
+      },
+      {
+        sponsor: 'azure',
+        href: 'http://www.google.com',
+        logo: AZURE_LOOG,
+      },
+      {
+        sponsor: 'aws',
+        href: 'http://www.google.com',
+        logo: AWS_LOGO
+      },
+      {
+        sponsor: 'azure',
+        href: 'http://www.google.com',
+        logo: AZURE_LOOG,
+      },
+    ]
+  },
   projectFooterLinks: [
     {
       title: 'Carrer',
