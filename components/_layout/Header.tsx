@@ -3,7 +3,7 @@ import ProjectLogo from '@/assets/logo.svg'
 import { PROJECT_CONFIGURATION } from '@/db/project-info'
 import { motion } from 'framer-motion'
 export const Header = () => {
-  const { projectTitle, projectSubtitle, projectVideo } = PROJECT_CONFIGURATION
+  const { projectTitle, projectSubtitle } = PROJECT_CONFIGURATION
 
   return (
     <div className='relative bg-secondary-dark text-white py-14'>
@@ -18,9 +18,6 @@ export const Header = () => {
               <h1 className='text-5xl font-bold'>{projectTitle}</h1>
             </div>
             <span className='text-xl font-body text-secondary-light'>{projectSubtitle}</span>
-          </div>
-          <div className='grid align-middle self-center'>
-            {projectVideo.isEnable && <div className='h-full p-4 bg-secondary-light'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid molestias ad explicabo illum amet. Veritatis aliquam corrupti inventore, ducimus consectetur officiis, ut culpa assumenda omnis nihil beatae, fugiat error est!</div>}
           </div>
         </div>
       </div>
