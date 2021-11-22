@@ -9,12 +9,12 @@ export const Header = () => {
     <div className='relative bg-secondary-dark text-white py-6'>
       {/* Header content */}
 
-      <div className='grid grid-flow-row md:grid-flow-row mx-auto w-5/6 2xl:w-3/6 pb-6  items-center justify-between'>
+      <div className='grid grid-flow-row md:grid-flow-row mx-auto w-5/6 2xl:w-3/6 pb-6  items-center'>
         {/* Main Header */}
         <div className='flex justify-end gap-3 items-center'>
-          <div className='flex text-base font-bold gap-2 hover:underline'>
+          <div className='flex text-base font-bold gap-2'>
             {projectNavigation.links.map((link) => (
-              <a key={link.title} href={link.href} target='_blank' rel='noreferrer'>
+              <a key={link.title} className='hover:underline' href={link.href} target='_blank' rel='noreferrer'>
                 {link.title}
               </a>
             ))}

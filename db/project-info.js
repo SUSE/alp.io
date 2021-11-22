@@ -28,12 +28,12 @@ export const PROJECT_CONFIGURATION = {
     ]
   },
   projectVideo: {
-    isEnable: true,
+    isEnable: false,
     youtubeUrl: 'https://www.youtube.com/watch?v=6pYrg92TOWo'
   },
   projectCta: {
     title: 'About Project Name',
-    description: 'In-memory image reduces upgrade overhead  (minimized system upgrade impact) easy installer wizard for persistent disk and other tooling.'
+    description: 'In-memory image reduces upgrade overhead (minimized system upgrade impact) easy installer wizard for persistent disk and other tooling. minimized system upgrade impact) easy installer wizard for persistent disk and other tooling.'
   },
   // ℹ️ No more than 3 items for a better structure.
   projectBulletPoints: [

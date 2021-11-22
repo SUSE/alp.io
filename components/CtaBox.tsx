@@ -1,4 +1,4 @@
-import { DocumentationSVG, GithubSVG } from '@/assets/images'
+import { DecorationLineSVG, DocumentationSVG, GithubSVG } from '@/assets/images'
 import { PROJECT_CONFIGURATION } from '@/db/project-info'
 import { motion } from 'framer-motion'
 import React from 'react'
@@ -41,8 +41,18 @@ export const CtaBox = ({ title, children }) => {
           </div>
         </>
       ) : (
-        <div className=''>
+        <div className='relative'>
           <ReactPlayer width='100%' url={projectVideo.youtubeUrl} controls={true} />
+          <div className='absolute w-full bottom-0  h-2 bg-green-700'>
+            <motion.div
+              initial={{
+                x: -200,
+                opacity: 1,
+              }}
+              animate={{ x: 0, opacity: 1 }}
+            >
+            </motion.div>
+          </div>
         </div>
       )}
     </motion.div>
