@@ -9,7 +9,7 @@ import { motion } from 'framer-motion'
 import Head from 'next/head'
 export default function Home() {
   /** 👀 Texts are generating from `db/project-info.js` file. There you can fill all the information related to the project such as name, description, call to action messages, repository/documentation URL, etc. */
-  const { projectTitle, projectSubtitle, projectWhy, projectHow, projectGetStarted } = PROJECT_CONFIGURATION
+  const { projectTitle, projectSubtitle, projectWhy, projectHow, projectGetStarted, projectFAQ } = PROJECT_CONFIGURATION
 
   return (
     <div>
@@ -90,24 +90,7 @@ export default function Home() {
         <div className='grid grid-flow-row gap-6 '>
           <p className='text-center text-secondary-light font-bold text-4xl mb-6'>FAQ</p>
           <Collapse
-            elements={[
-              {
-                title: 'What is SUSE eLearning?',
-                description: 'SUSE eLearning is your on-demand library of all SUSE technical training. A yearly subscription to SUSE eLearning gives you access to limitless learning to the entire library of SUSE training — anywhere, anytime — with immediate access to updated courseware.',
-              },
-              {
-                title: 'What is SUSE eLearning?',
-                description: 'SUSE eLearning is your on-demand library of all SUSE technical training. A yearly subscription to SUSE eLearning gives you access to limitless learning to the entire library of SUSE training — anywhere, anytime — with immediate access to updated courseware.',
-              },
-              {
-                title: 'What is SUSE eLearning?',
-                description: 'SUSE eLearning is your on-demand library of all SUSE technical training. A yearly subscription to SUSE eLearning gives you access to limitless learning to the entire library of SUSE training — anywhere, anytime — with immediate access to updated courseware.',
-              },
-              {
-                title: 'What is SUSE eLearning?',
-                description: 'SUSE eLearning is your on-demand library of all SUSE technical training. A yearly subscription to SUSE eLearning gives you access to limitless learning to the entire library of SUSE training — anywhere, anytime — with immediate access to updated courseware.',
-              },
-            ]}
+            elements={projectFAQ}
           />
         </div>
       </main>
