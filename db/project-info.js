@@ -60,9 +60,30 @@ export const PROJECT_CONFIGURATION = {
       }
     }
   ],
+  projectFAQ: [
+    {
+      title: 'What is SUSE eLearning?',
+      description: 'SUSE eLearning is your on-demand library of all SUSE technical training. A yearly subscription to SUSE eLearning gives you access to limitless learning to the entire library of SUSE training — anywhere, anytime — with immediate access to updated courseware.',
+    },
+    {
+      title: 'What is SUSE eLearning?',
+      description: 'SUSE eLearning is your on-demand library of all SUSE technical training. A yearly subscription to SUSE eLearning gives you access to limitless learning to the entire library of SUSE training — anywhere, anytime — with immediate access to updated courseware.',
+    },
+    {
+      title: 'What is SUSE eLearning?',
+      description: 'SUSE eLearning is your on-demand library of all SUSE technical training. A yearly subscription to SUSE eLearning gives you access to limitless learning to the entire library of SUSE training — anywhere, anytime — with immediate access to updated courseware.',
+    },
+    {
+      title: 'What is SUSE eLearning?',
+      description: 'SUSE eLearning is your on-demand library of all SUSE technical training. A yearly subscription to SUSE eLearning gives you access to limitless learning to the entire library of SUSE training — anywhere, anytime — with immediate access to updated courseware.',
+    },
+  ],
+  projectSponsors: [
+
+  ],
   projectFooterLinks: [
     {
-      title: 'Carrera',
+      title: 'Carrer',
       href: 'http://www.google.com',
     },
     {

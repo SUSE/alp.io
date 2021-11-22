@@ -2,14 +2,14 @@ import { motionListItems } from '@/assets/animations'
 import HowItWorksSVG from '@/assets/how_it_works.svg'
 import { DecorationLineSVG } from '@/assets/images'
 import { BulletPointCard, GetStartedDownloadCard } from '@/components/Cards'
+import { Collapse } from '@/components/Collapse'
 import { CtaBox } from '@/components/CtaBox'
 import { PROJECT_CONFIGURATION } from '@/db/project-info'
 import { motion } from 'framer-motion'
 import Head from 'next/head'
-
 export default function Home() {
   /** 👀 Texts are generating from `db/project-info.js` file. There you can fill all the information related to the project such as name, description, call to action messages, repository/documentation URL, etc. */
-  const { projectTitle, projectSubtitle, projectWhy, projectHow, projectGetStarted } = PROJECT_CONFIGURATION
+  const { projectTitle, projectSubtitle, projectWhy, projectHow, projectGetStarted, projectFAQ } = PROJECT_CONFIGURATION
 
   return (
     <div>
@@ -35,7 +35,7 @@ export default function Home() {
 
         {/** 👀 Why section */}
         <div className='grid grid-flow-row gap-6'>
-          <h1 className='text-center text-secondary-light font-bold text-4xl mb-6'>Why {projectTitle}?</h1>
+          <p className='text-center text-secondary-light font-bold text-4xl mb-6'>Why {projectTitle}?</p>
 
           <motion.div className='grid grid-flow-row md:grid-flow-col gap-4 2xl:gap-20' initial='hidden' animate='visible' variants={motionListItems}>
             {projectWhy.map((ele) => {
@@ -52,7 +52,7 @@ export default function Home() {
 
         {/** 👀 How to section */}
         <div className='grid grid-flow-row gap-6'>
-          <h1 className='text-center text-secondary-light font-bold text-4xl mb-6'>How it works?</h1>
+          <p className='text-center text-secondary-light font-bold text-4xl mb-6'>How it works?</p>
 
           <div className='grid grid-flow-row gap-4 2xl:gap-8'>
             <p>{projectHow.description}</p>
@@ -66,8 +66,8 @@ export default function Home() {
         </div>
 
         {/** 👀 Call to action */}
-        <div className='grid grid-flow-row gap-6 '>
-          <h1 className='text-center text-secondary-light font-bold text-4xl mb-6'>Get started</h1>
+        <div className='grid grid-flow-row gap-6'>
+          <p className='text-center text-secondary-light font-bold text-4xl mb-6'>Get started</p>
 
           <div className='relative grid grid-flow-row md:grid-flow-col gap-4 bg-secondary-dark px-6 py-10 text-white '>
             {projectGetStarted.map((ele, i) => (
@@ -85,6 +85,13 @@ export default function Home() {
               </motion.div>
             </div>
           </div>
+        </div>
+
+        <div className='grid grid-flow-row gap-6 '>
+          <p className='text-center text-secondary-light font-bold text-4xl mb-6'>FAQ</p>
+          <Collapse
+            elements={projectFAQ}
+          />
         </div>
       </main>
     </div>
