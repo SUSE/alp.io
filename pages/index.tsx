@@ -89,19 +89,20 @@ export default function Home() {
         </div>
 
         {/** 👀 FAQ Section */}
-        {projectFAQ.isEnabled && <div className='grid grid-flow-row gap-6 '>
-          <p className='text-center text-secondary-light font-bold text-4xl mb-6'>FAQ</p>
-          <Collapse
-            elements={projectFAQ.elements}
-          />
-        </div>}
+        {projectFAQ.isEnabled && (
+          <div className='grid grid-flow-row gap-6 '>
+            <p className='text-center text-secondary-light font-bold text-4xl mb-6'>FAQ</p>
+            <Collapse elements={projectFAQ.elements} />
+          </div>
+        )}
 
         {/** 👀 Sponsors */}
-        {projectSponsors.isEnable && <div className='grid grid-flow-row gap-6 '>
-          <p className='text-center text-secondary-light font-bold text-4xl mb-6'>Sponsors</p>
-          <SponsorsList sponsors={projectSponsors.elements} />
-        </div>
-        }
+        {projectSponsors.isEnable && (
+          <div className='grid grid-flow-row gap-6 '>
+            <p className='text-center text-secondary-light font-bold text-4xl mb-6'>Sponsors</p>
+            <SponsorsList sponsors={projectSponsors.elements} />
+          </div>
+        )}
       </main>
     </div>
   )
