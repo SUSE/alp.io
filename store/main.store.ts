@@ -6,7 +6,7 @@ type State = {
 }
 
 export const useStore = create<State>((set) => ({
-  theme: 'light',
+  theme: 'dark',
   updateTheme: (updateValue: 'light' | 'dark') => set(() => ({ theme: updateValue })),
 }))
 

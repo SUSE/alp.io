@@ -1,10 +1,8 @@
 import { motionListItems } from '@/assets/animations'
-import logo from '@/assets/logo.svg'
-import { CtaBox } from '@/components/CtaBox'
-import { PROJECT_CONFIGURATION } from '@/db/project-info'
+import { NeuVectorSVG } from '@/assets/images'
+import { VideoBox } from '@/components/VideoBox'
 import { motion } from 'framer-motion'
 import Head from 'next/head'
-import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -19,24 +17,26 @@ export default function Home() {
       <main className='grid grid-flow-row gap-8 text-sm'>
         {/** 👀 Call to Action section */}
         <div className='dark:bg-customDark bg-gray-100 relative'>
-          <div className='grid grid-row-2 content-center align-middle gap-14 md:grid-cols-2 mx-auto w-5/6 2xl:w-3/6 py-20'>
+          <div className='grid grid-row-2 content-center align-middle gap-14 md:grid-cols-3 mx-auto w-5/6 2xl:w-3/6 py-20'>
             <motion.div initial='hidden' animate='visible' variants={motionListItems} className='self-center'>
               <div className='my-4'>
-                <Image className='fill-current text-primary-light dark:text-primary my-4' src={logo.src} width={340} height={142} alt='neuvector - logo' />
+                <NeuVectorSVG className='w-60 fill-current text-primary-light dark:text-primary my-4' />
               </div>
-              <p className='text-3xl font-thin text-left text-secondary-dark dark:text-primary'>Container security for cloud-native ecosystems</p>
+              <p className='text-2xl font-thin text-left text-secondary-dark dark:text-primary'>Container security for cloud-native ecosystems</p>
 
               <p className='mt-4'>Continuously scan throughout the container lifecycle Remove security roadblocks Bake in security policies from the start</p>
             </motion.div>
 
-            <CtaBox title={`${PROJECT_CONFIGURATION.projectCta.title}`}>{PROJECT_CONFIGURATION.projectCta.description}</CtaBox>
+            <div className='col-span-2'>
+              <VideoBox />
+            </div>
           </div>
           {/** 👀 Call to Action Box */}
         </div>
 
         {/** 👀 About section */}
         <div className='grid gap-6 mx-auto w-5/6 2xl:w-3/6'>
-          <div className='grid grid-flow-row md:grid-cols-3 gap-14'>
+          <div className='grid grid-flow-row md:grid-cols-3 gap-14 mb-10'>
             <div>
               <h2 className='text-secondary-dark dark:text-primary font-light text-lg'>Vulnerability Management</h2>
               <p className='text-bold my-4 text-sm'>Scanning from pipeline to production.</p>
@@ -89,7 +89,7 @@ export default function Home() {
 
         {/** 👀 How to section */}
         <div className='dark:bg-secondary-dark bg-gray-100 relative'>
-          <div className='grid grid-cols-2 gap-6 m-16 mx-auto w-5/6 2xl:w-3/6'>
+          <div className='grid md:grid-cols-2 gap-6 m-16 mx-auto w-5/6 2xl:w-3/6'>
             <p className='text-secondary-dark dark:text-primary font-light text-3xl '>
               Container Security from Pipeline <br /> to Production
             </p>
@@ -98,11 +98,6 @@ export default function Home() {
               <p>
                 Open Zero Trust is the only kubernetes-native container security platform that delivers complete container security. Our end-to-end vulnerability management gives you a continuous risk profile on known threats. Our patented container firewall technology starts blocking on Day 1 to protect your infrastructure from known and unknown
                 threats. Our behavioral learning and Security as Code automation processes improve the flow between development and security. Integrating policy helps prevent future exposure.
-              </p>
-
-              <p>
-                Open Zero Trust delivers Full Lifecycle Container Security with the only cloud-native, Kubernetes security platform providing end-to-end vulnerability management, automated CI/CD pipeline security, and complete run-time security including the industry’s only container firewall to protect your infrastructure from zero days and
-                insider threats.
               </p>
             </div>
           </div>
@@ -131,9 +126,9 @@ export default function Home() {
               </ul>
             </div>
             <div className='flex flex-col gap-4'>
-              <a className='flex align-middle justify-center px-auto py-2 font-bold text-white bg-primary-light dark:text-secondary-dark dark:bg-primary hover:underline hover:cursor-pointer'>Deploy Using Helm Charts</a>
-              <a className='flex align-middle justify-center px-auto py-2 font-bold text-white bg-primary-light dark:text-secondary-dark dark:bg-primary hover:underline hover:cursor-pointer '>Deploy on Kubernetes</a>
-              <a className='flex align-middle justify-center px-auto py-2 font-bold text-white bg-primary-light dark:text-secondary-dark dark:bg-primary hover:underline hover:cursor-pointer '>OpenShift Operator</a>
+              <a className='hover:scale-105 transition-all underline flex align-middle justify-center px-auto py-2 font-bold text-white bg-primary-light dark:text-secondary-dark dark:bg-primary hover:underline hover:cursor-pointer'>Deploy Using Helm Charts</a>
+              <a className='hover:scale-105 transition-all underline flex align-middle justify-center px-auto py-2 font-bold text-white bg-primary-light dark:text-secondary-dark dark:bg-primary hover:underline hover:cursor-pointer '>Deploy on Kubernetes</a>
+              <a className='hover:scale-105 transition-all underline flex align-middle justify-center px-auto py-2 font-bold text-white bg-primary-light dark:text-secondary-dark dark:bg-primary hover:underline hover:cursor-pointer '>OpenShift Operator</a>
             </div>
           </div>
         </div>
@@ -148,18 +143,19 @@ export default function Home() {
               <p>Bugs and features are tracked through issues and new code is reviewed through pull requests.</p>
 
               <div className='grid grid-flow-row md:grid-cols-2 gap-4'>
-                <a className='flex align-middle justify-center px-auto py-2 font-bold text-white bg-primary-light dark:text-secondary-dark dark:bg-primary hover:underline hover:cursor-pointer '>Issues</a>
-                <a className='flex align-middle justify-center px-auto py-2 font-bold text-white bg-primary-light dark:text-secondary-dark dark:bg-primary hover:underline hover:cursor-pointer '>Pull Request</a>
+                <a className='hover:scale-105 transition-all underline flex align-middle justify-center px-auto py-2 font-bold text-white bg-primary-light dark:text-secondary-dark dark:bg-primary hover:underline hover:cursor-pointer '>Issues</a>
+                <a className='hover:scale-105 transition-all underline flex align-middle justify-center px-auto py-2 font-bold text-white bg-primary-light dark:text-secondary-dark dark:bg-primary hover:underline hover:cursor-pointer '>Pull Request</a>
               </div>
             </div>
 
             <div className='flex flex-col gap-4 p-8 bg-gray-400 dark:bg-secondary-dark'>
               <p className='text-2xl my-4 text-left text-secondary-dark dark:text-primary'>How to get support</p>
 
-              <p>Found an issue or have a problem? Community support happens in the #openzerotrust channel in Slack and in GitHub Issues, where you can search and file new issues.</p>
-              <div className='grid grid-flow-row md:grid-cols-2 gap-4 mt-4'>
-                <a className='flex align-middle justify-center px-auto py-2 font-bold text-white bg-primary-light dark:text-secondary-dark dark:bg-primary hover:underline hover:cursor-pointer '>Rancher Users Slack</a>
-                <a className='flex align-middle justify-center px-auto py-2 font-bold text-white bg-primary-light dark:text-secondary-dark dark:bg-primary hover:underline hover:cursor-pointer '>Issues</a>
+              <p>Found an issue or have a problem? Community support happens in the #openzerotrust channel in Slack and in GitHub Issues, where you can search and file new issues. </p>
+              <p></p>
+              <div className='grid grid-flow-row md:grid-cols-2 gap-4'>
+                <a className='hover:scale-105 transition-all underline flex align-middle justify-center px-auto py-2 font-bold text-white bg-primary-light dark:text-secondary-dark dark:bg-primary hover:underline hover:cursor-pointer '>Rancher Users Slack</a>
+                <a className='hover:scale-105 transition-all underline flex align-middle justify-center px-auto py-2 font-bold text-white bg-primary-light dark:text-secondary-dark dark:bg-primary hover:underline hover:cursor-pointer '>Issues</a>
               </div>
             </div>
           </div>
