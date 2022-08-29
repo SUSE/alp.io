@@ -1,13 +1,13 @@
 import create from 'zustand'
 
 type State = {
-  members: number
-  update: (newValue: number) => void
+  theme: 'light' | 'dark'
+  updateTheme: (theme: 'light' | 'dark') => void
 }
 
 export const useStore = create<State>((set) => ({
-  members: 10,
-  update: (newValue) => set(() => ({ members: newValue })),
+  theme: 'dark',
+  updateTheme: (updateValue: State[keyof State]) => set(() => ({ theme: updateValue })),
 }))
 
 export default useStore

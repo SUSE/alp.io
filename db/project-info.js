@@ -29,7 +29,7 @@ export const PROJECT_CONFIGURATION = {
   },
   projectVideo: {
     isEnable: true,
-    youtubeUrl: 'https://www.youtube.com/watch?v=6pYrg92TOWo'
+    youtubeUrl: 'https://www.youtube.com/watch?v=_PHDXvygJtU'
   },
   projectCta: {
     title: 'About Project Name',

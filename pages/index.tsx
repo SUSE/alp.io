@@ -1,123 +1,169 @@
 import { motionListItems } from '@/assets/animations'
-import HowItWorksSVG from '@/assets/how_it_works.svg'
-import { DecorationLineSVG, LibrarySVG } from '@/assets/images'
-import { BulletPointCard, GetStartedDownloadCard } from '@/components/Cards'
-import { Collapse } from '@/components/Collapse'
+import logo from '@/assets/logo.svg'
 import { CtaBox } from '@/components/CtaBox'
-import { SponsorsList } from '@/components/Sponsors'
 import { PROJECT_CONFIGURATION } from '@/db/project-info'
 import { motion } from 'framer-motion'
 import Head from 'next/head'
-export default function Home() {
-  /** 👀 Texts are generating from `db/project-info.js` file. There you can fill all the information related to the project such as name, description, call to action messages, repository/documentation URL, etc. */
-  const { projectTitle, projectSubtitle, projectWhy, projectHow, projectGetStarted, projectFAQ, projectSponsors } = PROJECT_CONFIGURATION
+import Image from 'next/image'
 
+export default function Home() {
   return (
     <div>
       <Head>
-        <title>{projectTitle} </title>
-        <meta name='description' content={projectSubtitle} />
+        <title>NeuVector </title>
+        <meta name='description' content='Continuously scan throughout the container lifecycle Remove security roadblocks Bake in security policies from the start' />
         {/** 👀 Replace with your custom favicon.ico */}
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <main className={'grid grid-flow-row gap-20'}>
+      <main className='grid grid-flow-row gap-8 text-sm'>
         {/** 👀 Call to Action section */}
-        <div className='bg-secondary-lighter relative'>
-          <div className="grid grid-row-2 content-center align-middle gap-14 md:grid-cols-2 mx-auto w-5/6 2xl:w-3/6 py-20">
-            <motion.div initial='hidden' animate='visible' variants={motionListItems} className='self-center' >
-              <p className='text-[40px] font-extrabold text-right text-secondary-dark'> {projectSubtitle}</p>
+        <div className='dark:bg-customDark bg-gray-100 relative'>
+          <div className='grid grid-row-2 content-center align-middle gap-14 md:grid-cols-2 mx-auto w-5/6 2xl:w-3/6 py-20'>
+            <motion.div initial='hidden' animate='visible' variants={motionListItems} className='self-center'>
+              <div className='my-4'>
+                <Image className='fill-current text-primary-light dark:text-primary my-4' src={logo.src} width={340} height={142} alt='neuvector - logo' />
+              </div>
+              <p className='text-3xl font-thin text-left text-secondary-dark dark:text-primary'>Container security for cloud-native ecosystems</p>
+
+              <p className='mt-4'>Continuously scan throughout the container lifecycle Remove security roadblocks Bake in security policies from the start</p>
             </motion.div>
 
             <CtaBox title={`${PROJECT_CONFIGURATION.projectCta.title}`}>{PROJECT_CONFIGURATION.projectCta.description}</CtaBox>
-
-            <div className="md:absolute flex flex-col md:flex-row gap-10 -bottom-24 md:px-20 mx-auto w-5/6 2xl:w-3/6">
-              {/** 👀 Bulletpoint section */}
-              {PROJECT_CONFIGURATION.projectBulletPoints.map((ele, i) => (
-                <BulletPointCard key={i} item={ele} />
-              ))}
-            </div>
           </div>
           {/** 👀 Call to Action Box */}
-
         </div>
 
-        {/** 👀 Why section */}
-        <div className='grid grid-flow-row gap-6 mx-auto w-5/6 2xl:w-3/6'>
-          <p className='text-secondary-light font-bold text-4xl mb-6 mt-20 text-center'>What is {projectTitle}?</p>
+        {/** 👀 About section */}
+        <div className='grid gap-6 mx-auto w-5/6 2xl:w-3/6'>
+          <div className='grid grid-flow-row md:grid-cols-3 gap-14'>
+            <div>
+              <h2 className='text-secondary-dark dark:text-primary font-light text-lg'>Vulnerability Management</h2>
+              <p className='text-bold my-4 text-sm'>Scanning from pipeline to production.</p>
+              <motion.p className='grid grid-flow-row gap-4 text-sm font-thin' initial='hidden' animate='visible' variants={motionListItems}>
+                Continuously scan throughout the container lifecycle. Fast, accurate and scalable.
+              </motion.p>
+            </div>
 
-          <motion.div className='grid grid-flow-row gap-4' initial='hidden' animate='visible' variants={motionListItems}>
-            <p>Aquarium is a SUSE-sponsored Open Source project to build an easy-to-use, rock-solid appliance wrapped around the Ceph project. The project started development in January 2021, and has become a passion project for the storage team at SUSE.</p>
+            <div>
+              <h2 className='text-secondary-dark dark:text-primary font-light text-lg'>Runtime Security</h2>
+              <p className='text-bold my-4 text-sm'>Zero trust for containers in production.</p>
+              <motion.p className='grid grid-flow-row gap-4 text-sm font-thin' initial='hidden' animate='visible' variants={motionListItems}>
+                Block known and unknown threats with NeuVector’s patented container firewall technology. Protect your network, files, and processes.
+              </motion.p>
+            </div>
 
-            <p>
-              We are investigating the beginnings of a new storage appliance project in an opinionated fashion. The Aquarium project is split into two clearly defined work streams: Gravel (backend) and Glass (frontend).
-            </p>
-          </motion.div>
+            <div>
+              <h2 className='text-secondary-dark dark:text-primary font-light text-lg'>Supply Chain Security</h2>
+              <p className='text-bold my-4 text-sm'>Shift security left without slowing down.</p>
+              <motion.p className='grid grid-flow-row gap-4 text-sm font-thin' initial='hidden' animate='visible' variants={motionListItems}>
+                OpenZeroTrust covers the entire CI/CD pipeline with complete vulnerability management, compliance scanning, and admission controls.
+              </motion.p>
+            </div>
+
+            <div>
+              <h2 className='text-secondary-dark dark:text-primary font-light text-lg'>Network Visibility</h2>
+              <p className='text-bold my-4 text-sm'>360 degree view for 100% visibility.</p>
+              <motion.p className='grid grid-flow-row gap-4 text-sm font-thin' initial='hidden' animate='visible' variants={motionListItems}>
+                Layer 7 visibility within and between pods, patented deep packet inspection to detect and block threats, and network mapping.
+              </motion.p>
+            </div>
+
+            <div>
+              <h2 className='text-secondary-dark dark:text-primary font-light text-lg'>Container Segmentation</h2>
+              <p className='text-bold my-4 text-sm'>Protect PII. Essential for PCI and other mandates.</p>
+              <motion.p className='grid grid-flow-row gap-4 text-sm font-thin' initial='hidden' animate='visible' variants={motionListItems}>
+                OpenZeroTrust creates a virtual wall to keep personal and private information securely isolated on your network.
+              </motion.p>
+            </div>
+
+            <div>
+              <h2 className='text-secondary-dark dark:text-primary font-light text-lg'>Compliance</h2>
+              <p className='text-bold my-4 text-sm'>Exceed the standards. DLP included.</p>
+              <motion.p className='grid grid-flow-row gap-4 text-sm font-thin' initial='hidden' animate='visible' variants={motionListItems}>
+                We you covered with automated, audit-ready compliance assessment and reporting. Sail through PCI, SOC2 and other audits with less stress.
+              </motion.p>
+            </div>
+          </div>
         </div>
 
         {/** 👀 How to section */}
-        <div className='bg-gray-200 relative'>
-          <div className='grid grid-flow-row gap-6 m-16 mx-auto w-5/6 2xl:w-3/6'>
-            <p className='text-secondary-light font-bold text-4xl text-center'>How it works</p>
+        <div className='dark:bg-secondary-dark bg-gray-100 relative'>
+          <div className='grid grid-cols-2 gap-6 m-16 mx-auto w-5/6 2xl:w-3/6'>
+            <p className='text-secondary-dark dark:text-primary font-light text-3xl '>
+              Container Security from Pipeline <br /> to Production
+            </p>
 
             <div className='grid grid-flow-row gap-4 2xl:gap-8'>
-              {/** 👀 Teplace the image under `assets/how_it_works.svg` */}
-              {/*eslint-disable-next-line @next/next/no-img-element */}
-              <img className='mx-auto max-w-[600px]' src={HowItWorksSVG.src} alt={`How ${projectHow.title} works`} />
+              <p>
+                Open Zero Trust is the only kubernetes-native container security platform that delivers complete container security. Our end-to-end vulnerability management gives you a continuous risk profile on known threats. Our patented container firewall technology starts blocking on Day 1 to protect your infrastructure from known and unknown
+                threats. Our behavioral learning and Security as Code automation processes improve the flow between development and security. Integrating policy helps prevent future exposure.
+              </p>
+
+              <p>
+                Open Zero Trust delivers Full Lifecycle Container Security with the only cloud-native, Kubernetes security platform providing end-to-end vulnerability management, automated CI/CD pipeline security, and complete run-time security including the industry’s only container firewall to protect your infrastructure from zero days and
+                insider threats.
+              </p>
             </div>
           </div>
         </div>
 
         {/** 👀 Call to action */}
-        <div className='grid grid-flow-row gap-6 mx-auto w-5/6 2xl:w-3/6'>
-          <p className=' text-secondary-light font-bold text-4xl mb-6 text-center'>Get started</p>
-
-          <p>
-            Our Zero-to-Hero guide takes you step by step through the process of setting up a local, VM-based test instance via Vagrant on a Linux system of your choice, including checking out all the required repositories, setting up a local build environment, running your first image build, and starting the resulting cluster.
-          </p>
-
-          <p>
-            After only about half an hour, you will be able to login to a Ceph cluster managed via Aquarium for the first time!
-          </p>
-          <a className='flex gap-2 place-self-start px-2 py-2 font-medium bg-primary' href='https://github.com/aquarist-labs/aquarium/blob/main/doc/from-zero-to-hero.md' target='_blank' rel="noreferrer" >
-            <LibrarySVG className='w-6 fill-current text-black' />
-            Read the From-Zero-to-Hero Guide
-          </a>
-        </div>
-        <div className='bg-secondary-lighter relative'>
-          <div className='mx-auto w-5/6 2xl:w-3/6 h-[280px] md:h-[300px]'>
-            <div className='-mt-12 grid grid-flow-row md:grid-flow-col gap-4 bg-gray-200 px-6 py-10 text-black '>
-              <div className=' flex flex-col gap-2 flex-wrap'>
-                {projectGetStarted.map((ele, i) => {
-                  return <div key={i} className="flex gap-2">
-                    <span className='text-gray-500 flex'>
-                      user
-                      <span className='md:flex hidden'>@Host ~ </span>
-                      %
-                    </span>
-                    {ele}
-                  </div>
-                })}
-              </div>
+        <div className='mx-auto w-5/6 2xl:w-3/6'>
+          <p className='text-2xl my-4 text-left text-secondary-dark dark:text-primary'>Getting started</p>
+          <div className='grid grid-flow-row md:grid-cols-3 gap-6'>
+            <div>
+              <p>Images are available on the NeuVector Docker Hub registry. Use the appropriate version tag for the manager, controller, enforcer, and leave the version as ‘latest’ for scanner and updater. For example:</p>
+              <ul className='flex flex-col gap-2 p-4 list-disc'>
+                <li>neuvector/manager.preview:5.0.0-preview.3</li>
+                <li>neuvector/controller.preview:5.0.0-preview.3</li>
+                <li>neuvector/enforcer.preview:5.0.0-preview.3</li>
+                <li>neuvector/scanner.preview:latest</li>
+                <li>neuvector/updater.preview:latest</li>
+              </ul>
+            </div>
+            <div>
+              <p>If deploying with the current NeuVector Helm chart (v1.8.9+), the following changes should be made to values.yml:</p>
+              <ul className='flex flex-col gap-2 p-4 list-disc'>
+                <li>Update the registry to docker.io</li>
+                <li>Update image names/tags to the preview version on Docker hub</li>
+                <li>Leave the imagePullSecrets empty</li>
+              </ul>
+            </div>
+            <div className='flex flex-col gap-4'>
+              <a className='flex align-middle justify-center px-auto py-2 font-bold text-white bg-primary-light dark:text-secondary-dark dark:bg-primary hover:underline hover:cursor-pointer'>Deploy Using Helm Charts</a>
+              <a className='flex align-middle justify-center px-auto py-2 font-bold text-white bg-primary-light dark:text-secondary-dark dark:bg-primary hover:underline hover:cursor-pointer '>Deploy on Kubernetes</a>
+              <a className='flex align-middle justify-center px-auto py-2 font-bold text-white bg-primary-light dark:text-secondary-dark dark:bg-primary hover:underline hover:cursor-pointer '>OpenShift Operator</a>
             </div>
           </div>
         </div>
 
-        {/** 👀 FAQ Section */}
-        {projectFAQ.isEnabled && (
-          <div className='grid grid-flow-row gap-6 mb-24 mx-auto w-5/6 2xl:w-3/6 '>
-            <p className='text-secondary-light font-bold text-4xl mb-6 text-center'>FAQ</p>
-            <Collapse elements={projectFAQ.elements} />
-          </div>
-        )}
+        {/** 👀 Call to action */}
+        <div className='mx-auto w-5/6 2xl:w-3/6'>
+          <div className='grid grid-flow-row md:grid-cols-2 gap-8 my-10'>
+            <div className='flex flex-col gap-4 p-8 bg-gray-400 dark:bg-secondary-dark'>
+              <p className='text-2xl my-4 text-left text-secondary-dark dark:text-primary'>How to get involved</p>
 
-        {/** 👀 Sponsors */}
-        {projectSponsors.isEnable && (
-          <div className='grid grid-flow-row gap-6 '>
-            <p className='text-center text-secondary-light font-bold text-4xl mb-6'>Sponsors</p>
-            <SponsorsList sponsors={projectSponsors.elements} />
+              <p>Rancher Desktop is an open source project hosted on GitHub.</p>
+              <p>Bugs and features are tracked through issues and new code is reviewed through pull requests.</p>
+
+              <div className='grid grid-flow-row md:grid-cols-2 gap-4'>
+                <a className='flex align-middle justify-center px-auto py-2 font-bold text-white bg-primary-light dark:text-secondary-dark dark:bg-primary hover:underline hover:cursor-pointer '>Issues</a>
+                <a className='flex align-middle justify-center px-auto py-2 font-bold text-white bg-primary-light dark:text-secondary-dark dark:bg-primary hover:underline hover:cursor-pointer '>Pull Request</a>
+              </div>
+            </div>
+
+            <div className='flex flex-col gap-4 p-8 bg-gray-400 dark:bg-secondary-dark'>
+              <p className='text-2xl my-4 text-left text-secondary-dark dark:text-primary'>How to get support</p>
+
+              <p>Found an issue or have a problem? Community support happens in the #openzerotrust channel in Slack and in GitHub Issues, where you can search and file new issues.</p>
+              <div className='grid grid-flow-row md:grid-cols-2 gap-4 mt-4'>
+                <a className='flex align-middle justify-center px-auto py-2 font-bold text-white bg-primary-light dark:text-secondary-dark dark:bg-primary hover:underline hover:cursor-pointer '>Rancher Users Slack</a>
+                <a className='flex align-middle justify-center px-auto py-2 font-bold text-white bg-primary-light dark:text-secondary-dark dark:bg-primary hover:underline hover:cursor-pointer '>Issues</a>
+              </div>
+            </div>
           </div>
-        )}
+        </div>
       </main>
     </div>
   )

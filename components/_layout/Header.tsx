@@ -1,34 +1,58 @@
-import { DecorationLineSVG, GithubSVG, SlackSVG } from '@/assets/images'
-import ProjectLogo from '@/assets/logo.svg'
-import { PROJECT_CONFIGURATION } from '@/db/project-info'
-import { motion } from 'framer-motion'
+import { DocumentationSVG, GithubSVG } from '@/assets/images'
+import useStore from '@/store/main.store'
+import { useEffect } from 'react'
+
 export const Header = () => {
-  const { projectTitle, projectSubtitle, projectNavigation } = PROJECT_CONFIGURATION
+  const { theme, updateTheme } = useStore((state) => state)
+
+  const toggleTheme = () => {
+    const storageTheme = localStorage.getItem('theme')
+
+    if(!storageTheme && theme) {
+      localStorage.setItem('theme', theme)
+      document.getElementsByTagName('html')[0].setAttribute('class', theme)
+    } else {
+      console.log('🚀 ~ file: Header.tsx ~ line 18 ~ toggleTheme ~ theme', theme)
+      const toggleTheme = theme === 'dark' ? 'light' : 'dark'
+      localStorage.setItem('theme', toggleTheme)
+      updateTheme(toggleTheme)
+      document.getElementsByTagName('html')[0].setAttribute('class', toggleTheme)
+    }
+  }
+
+
+  useEffect(() => {
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [theme])
 
   return (
-    <div className='relative bg-white py-6'>
-      {/* Header content */}
-
-      <div className='grid grid-flow-row md:grid-flow-row mx-auto w-5/6 2xl:w-3/6  items-center'>
+    <div className='relative bg-primary-light text-white dark:bg-secondary-dark dark:text-white py-2'>
+      <div className='grid grid-flow-row md:grid-flow-row mx-auto w-5/6 2xl:w-3/6'>
         {/* Main Header */}
-        <div className='grid grid-row-2 md:grid-cols-2 gap-8 justify-between align-middle'>
-          <div className='grid gap-4'>
-            <div className='flex items-center align-middle gap-4'>
-              {/*eslint-disable-next-line @next/next/no-img-element */}
-              <img className='self-center' width='60px' height='60px' src={ProjectLogo.src} alt={`${projectTitle} logo`} />
-              <h1 className='text-5xl font-bold text-secondary-light'>{projectTitle}</h1>
-            </div>
+        <div className='flex place-self-start md:place-self-end self-center gap-2 px-4 py-4'>
+          <a className='flex gap-2 px-4 font-medium' href='https://join.slack.com/t/aquaristlabs/shared_invite/zt-nphn0jhg-QYKw__It8JPMkUR_sArOug' target='_blank' rel='noreferrer'>
+            <DocumentationSVG className='fill-current w-6' />
+            Docs
+          </a>
+
+          <a className=' flex gap-2 px-4 font-medium' href='https://github.com/aquarist-labs/aquarium' target='_blank' rel='noreferrer'>
+            <GithubSVG className='fill-current w-6' />
+            GitHub
+          </a>
+
+          <div className='relative flex self-center group hover:cursor-pointer'>
+            More from SUSE
+            <ul className='absolute top-6 hidden group-hover:flex flex-col bg-green-500 p-4 z-10'>
+              <li>Link 1</li>
+              <li>Link 2</li>
+              <li>Link 3</li>
+            </ul>
           </div>
 
-          <div className='place-self-start md:place-self-end self-center flex gap-2 px-4 py-4' >
-            <a className='place-self-start md:place-self-end self-center flex gap-2 px-4 py-2 font-medium border-2 border-gray-900 text-gray-900' href='https://join.slack.com/t/aquaristlabs/shared_invite/zt-nphn0jhg-QYKw__It8JPMkUR_sArOug' target='_blank' rel="noreferrer">
-              <SlackSVG className='fill-current text-gray-900 w-6' />
-              Join Slack</a>
-
-            <a className=' place-self-start md:place-self-end self-center flex gap-2 px-4 py-2 font-medium border-2 border-primary bg-primary text-white' href='https://github.com/aquarist-labs/aquarium' target='_blank' rel="noreferrer">
-              <GithubSVG className='fill-current text-white w-6' />
-              Repository</a>
-          </div>
+          <button onClick={toggleTheme}>
+            <span>{theme === 'dark' ? '🌞' : '🌚'}</span>
+          </button>
         </div>
       </div>
     </div>

@@ -4,7 +4,7 @@ import { PROJECT_CONFIGURATION } from '@/db/project-info'
 export const Footer = () => {
   const { projectFooterLinks, projectNavigation } = PROJECT_CONFIGURATION
   return (
-    <div className=' bg-secondary-dark text-white'>
+    <div className='bg-white dark:bg-black dark:text-white'>
       <div className='grid grid-flow-row align-middle mx-auto w-5/6 2xl:w-3/6'>
         <div className='grid grid-flow-col gap-4 justify-between items-center'>
 
