@@ -1,6 +1,7 @@
 import useStore from '@/store/main.store'
 import { useEffect } from 'react'
 import { DocAndGitLinks } from '../DocAndGitLinks'
+import {ThemeI} from '@/store/main.store'
 
 export const Header = () => {
   const { theme, updateTheme } = useStore((state) => state)
@@ -13,17 +14,17 @@ export const Header = () => {
   }
 
   useEffect(() => {
-    const storageTheme = localStorage.getItem('theme')
+    // Persist the theme in localStorage
+    const persistedTheme = localStorage.getItem('theme') as ThemeI
 
-    if (!storageTheme && theme) {
-      localStorage.setItem('theme', theme)
-      document.getElementsByTagName('html')[0].setAttribute('class', theme)
+    if (persistedTheme) {
+      updateTheme(persistedTheme)
+      document.getElementsByTagName('html')[0].setAttribute('class', persistedTheme)
     } else {
       document.getElementsByTagName('html')[0].setAttribute('class', theme)
       localStorage.setItem('theme', theme)
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  }, [theme, updateTheme])
 
   return (
     <div className='relative bg-primary-light text-white dark:bg-secondary-dark dark:text-white py-2'>
@@ -45,7 +46,7 @@ export const Header = () => {
             </ul>
           </div>
 
-          <button onClick={toggleTheme}>
+          <button className='px-2 bg-white rounded-full' onClick={toggleTheme}>
             <span>{theme === 'dark' ? '🌞' : '🌚'}</span>
           </button>
         </div>
