@@ -37,9 +37,9 @@ export const Header = () => {
         <div className='flex place-self-start md:place-self-end self-center gap-2 px-4 py-4'>
           <DocAndGitLinks />
 
-          <div className='relative flex self-center md:ml-7 group hover:cursor-pointer'>
+          <div className='relative flex self-center md:ml-2 group hover:cursor-pointer'>
             <span className='hidden md:flex'>More from SUSE</span>
-            <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' strokeWidth='1.5' stroke='currentColor' className='sm:hidden w-6 h-6'>
+            <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' strokeWidth='1.5' stroke='currentColor' className='flex md:hidden w-6 h-6'>
               <path strokeLinecap='round' strokeLinejoin='round' d='M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5' />
             </svg>
 
@@ -74,6 +74,8 @@ export const Header = () => {
               </a>
             </div>
           </div>
+
+          <span className='opacity-20 mx-2'>|</span>
 
           <button className='px-2 bg-white rounded-full transition-all' onClick={toggleTheme}>
             <span>{theme === 'dark' ? '🌞' : '🌚'}</span>

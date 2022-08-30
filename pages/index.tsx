@@ -24,7 +24,9 @@ export default function Home() {
               </div>
               <p className='text-2xl font-thin text-left text-secondary-dark dark:text-primary'>Container security for cloud-native ecosystems</p>
 
-              <p className='mt-4'>Continuously scan throughout the container lifecycle Remove security roadblocks Bake in security policies from the start</p>
+              <p className='mt-4'>
+                Continuously scan throughout the container lifecycle <br /> Remove security roadblocks <br /> Bake in security policies from the start
+              </p>
             </motion.div>
 
             <div className='col-span-2'>
@@ -88,7 +90,7 @@ export default function Home() {
 
         {/** 👀 How to section */}
         <div className='dark:bg-secondary-dark bg-gray-100 relative'>
-          <div className='grid md:grid-cols-2 gap-6 m-16 mx-auto w-5/6 2xl:w-3/6'>
+          <div className='grid md:grid-cols-2 gap-4 m-16 mx-auto w-5/6 2xl:w-3/6'>
             <p className='text-secondary-dark dark:text-primary font-light text-3xl '>
               Container Security from Pipeline <br /> to Production
             </p>
@@ -125,36 +127,49 @@ export default function Home() {
               </ul>
             </div>
             <div className='flex flex-col gap-4'>
-              <a className='hover:scale-105 transition-all underline flex align-middle justify-center px-auto py-2 font-bold text-white bg-primary-light dark:text-secondary-dark dark:bg-primary hover:underline hover:cursor-pointer'>Deploy Using Helm Charts</a>
-              <a className='hover:scale-105 transition-all underline flex align-middle justify-center px-auto py-2 font-bold text-white bg-primary-light dark:text-secondary-dark dark:bg-primary hover:underline hover:cursor-pointer '>Deploy on Kubernetes</a>
-              <a className='hover:scale-105 transition-all underline flex align-middle justify-center px-auto py-2 font-bold text-white bg-primary-light dark:text-secondary-dark dark:bg-primary hover:underline hover:cursor-pointer '>OpenShift Operator</a>
+              <a href='https://github.com/neuvector/neuvector-helm' target='_blank' rel='nofollow noreferrer' className='hover:scale-105 transition-all underline flex align-middle justify-center px-auto py-2 font-bold text-white bg-primary-light dark:text-secondary-dark dark:bg-primary hover:underline hover:cursor-pointer'>
+                Deploy Using Helm Charts
+              </a>
+              <a href='https://open-docs.neuvector.com/deploying/kubernetes' target='_blank' rel='nofollow noreferrer' className='hover:scale-105 transition-all underline flex align-middle justify-center px-auto py-2 font-bold text-white bg-primary-light dark:text-secondary-dark dark:bg-primary hover:underline hover:cursor-pointer'>
+                Deploy on Kubernetes
+              </a>
+              <a href='https://open-docs.neuvector.com/deploying/production/operators ' target='_blank' rel='nofollow noreferrer' className='hover:scale-105 transition-all underline flex align-middle justify-center px-auto py-2 font-bold text-white bg-primary-light dark:text-secondary-dark dark:bg-primary hover:underline hover:cursor-pointer'>
+                OpenShift Operator
+              </a>
             </div>
           </div>
         </div>
-
         {/** 👀 Get involved */}
         <div className='mx-auto w-5/6 2xl:w-3/6'>
           <div className='grid grid-flow-row md:grid-cols-2 gap-8 my-10'>
             <div className='flex flex-col gap-4 p-8 bg-gray-400 dark:bg-secondary-dark'>
-              <p className='text-2xl my-4 text-left text-secondary-dark dark:text-primary'>How to get involved</p>
+              <p className='text-2xl mb-4 text-left text-secondary-dark dark:text-primary'>How to get involved</p>
 
-              <p>Rancher Desktop is an open source project hosted on GitHub.</p>
+              <p>OpenZeroTrust is an open source project hosted on GitHub.</p>
               <p>Bugs and features are tracked through issues and new code is reviewed through pull requests.</p>
 
               <div className='grid grid-flow-row md:grid-cols-2 gap-4'>
-                <a className='hover:scale-105 transition-all underline flex align-middle justify-center px-auto py-2 font-bold text-white bg-primary-light dark:text-secondary-dark dark:bg-primary hover:underline hover:cursor-pointer '>Issues</a>
-                <a className='hover:scale-105 transition-all underline flex align-middle justify-center px-auto py-2 font-bold text-white bg-primary-light dark:text-secondary-dark dark:bg-primary hover:underline hover:cursor-pointer '>Pull Request</a>
+                <a href='https://github.com/neuvector ' target='_blank' rel='nofollow noreferrer' className='hover:scale-105 transition-all underline flex align-middle justify-center px-auto py-2 font-bold text-white bg-primary-light dark:text-secondary-dark dark:bg-primary hover:underline hover:cursor-pointer '>
+                  Issues
+                </a>
+                <a href='https://github.com/neuvector ' target='_blank' rel='nofollow noreferrer' className='hover:scale-105 transition-all underline flex align-middle justify-center px-auto py-2 font-bold text-white bg-primary-light dark:text-secondary-dark dark:bg-primary hover:underline hover:cursor-pointer '>
+                  Pull Request
+                </a>
               </div>
             </div>
 
             <div className='flex flex-col gap-4 p-8 bg-gray-400 dark:bg-secondary-dark'>
-              <p className='text-2xl my-4 text-left text-secondary-dark dark:text-primary'>How to get support</p>
+              <p className='text-2xl mb-4 text-left text-secondary-dark dark:text-primary'>How to get support</p>
 
               <p>Found an issue or have a problem? Community support happens in the #openzerotrust channel in Slack and in GitHub Issues, where you can search and file new issues. </p>
               <p></p>
               <div className='grid grid-flow-row md:grid-cols-2 gap-4'>
-                <a className='hover:scale-105 transition-all underline flex align-middle justify-center px-auto py-2 font-bold text-white bg-primary-light dark:text-secondary-dark dark:bg-primary hover:underline hover:cursor-pointer '>Rancher Users Slack</a>
-                <a className='hover:scale-105 transition-all underline flex align-middle justify-center px-auto py-2 font-bold text-white bg-primary-light dark:text-secondary-dark dark:bg-primary hover:underline hover:cursor-pointer '>Issues</a>
+                <a href='https://slack.rancher.io/ ' target='_blank' rel='nofollow noreferrer' className='hover:scale-105 transition-all underline flex align-middle justify-center px-auto py-2 font-bold text-white bg-primary-light dark:text-secondary-dark dark:bg-primary hover:underline hover:cursor-pointer'>
+                  Rancher Users Slack
+                </a>
+                <a href='https://github.com/neuvector ' target='_blank' rel='nofollow noreferrer' className='hover:scale-105 transition-all underline flex align-middle justify-center px-auto py-2 font-bold text-white bg-primary-light dark:text-secondary-dark dark:bg-primary hover:underline hover:cursor-pointer'>
+                  Issues
+                </a>
               </div>
             </div>
           </div>
