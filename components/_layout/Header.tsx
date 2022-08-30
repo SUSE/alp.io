@@ -81,7 +81,7 @@ export const Header = () => {
           <span className='self-center opacity-20 mx-2'>|</span>
 
           <button className='flex self-center px-2 h-8 bg-white rounded-full transition-all' onClick={toggleTheme}>
-            <span className='self-center'>{theme === 'dark' ? '🌞' : '🌚'}</span>
+            <span className='self-center'>{theme === 'dark' ? '🌚' : '🌞' }</span>
           </button>
         </div>
       </div>
