@@ -44,32 +44,32 @@ export const Header = () => {
             </svg>
 
             <div className='absolute -left-20 md:left-0 top-6 hidden group-hover:flex flex-col bg-primary-light bg-opacity-95  dark:bg-secondary-dark text-sm drop-shadow shadow-sm shadow- p-4 z-10 min-w-[180px] transition-all'>
-              <a rel="nofollow noreferrer" href='https://rancher.com/' target="_blank" className='flex gap-2 hover:ml-2 transition-all'>
+              <a rel='nofollow noreferrer' href='https://rancher.com/' target='_blank' className='flex gap-2 hover:ml-2 transition-all'>
                 <RancherLogoSVG className='w-4' />
                 Rancher
               </a>
 
               <hr className='m-2 border-gray-400 border-opacity-20' />
 
-              <a rel="nofollow noreferrer" href='https://epinio.io/' target="_blank" className='flex py-2 gap-2 hover:ml-2 transition-all'>
+              <a rel='nofollow noreferrer' href='https://epinio.io/' target='_blank' className='flex py-2 gap-2 hover:ml-2 transition-all'>
                 <Image width={16} height={16} src={EpinioLogo.src} alt='' />
                 Epinio
               </a>
-              <a rel="nofollow noreferrer" href='https://harvesterhci.io/' target="_blank" className='flex py-2 gap-2 hover:ml-2 transition-all'>
+              <a rel='nofollow noreferrer' href='https://harvesterhci.io/' target='_blank' className='flex py-2 gap-2 hover:ml-2 transition-all'>
                 <Image width={16} height={16} src={HarvesterLogo.src} alt='' />
                 Harvester
               </a>
-              <a rel="nofollow noreferrer" href='https://www.kubewarden.io/' target="_blank" className='flex py-2 gap-2 hover:ml-2 transition-all'>
+              <a rel='nofollow noreferrer' href='https://www.kubewarden.io/' target='_blank' className='flex py-2 gap-2 hover:ml-2 transition-all'>
                 <Image width={20} height={20} src={KubewardenLogo.src} alt='' />
                 Kubewarden
               </a>
-              <a rel="nofollow noreferrer" href='https://opni.io/' target="_blank" className='flex py-2 gap-2 hover:ml-2 transition-all'>
+              <a rel='nofollow noreferrer' href='https://opni.io/' target='_blank' className='flex py-2 gap-2 hover:ml-2 transition-all'>
                 <Image width={16} height={16} src={OpniLogo.src} alt='' />
                 Opni
               </a>
 
               <hr className='m-2 border-gray-400 border-opacity-20' />
-              <a rel="nofollow noreferrer" href='https://opensource.suse.com/' target="_blank" className='flex gap-2 hover:ml-2 transition-all'>
+              <a rel='nofollow noreferrer' href='https://opensource.suse.com/' target='_blank' className='flex gap-2 hover:ml-2 transition-all'>
                 More projects...
               </a>
             </div>
