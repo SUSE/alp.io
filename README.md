@@ -77,3 +77,5 @@ You can serve the applications a Server-Side render with `npm start`. This will 
 If you want to generate static files to serve as Static Site on Github Pages for example you should run `npm run static`. This will generate an `/out` folder with all the static files.
 
 *NOTE:*: You'll need to edit `next.config.js`, uncomment add replace the default `project-template` name with your repository name for `assetPrefix & basePath`, this configuration is needed to correctly render and set paths in Github Pages.
+
+There's already an github workflow that will deploy to your repo's GH Pages, check `./github/workflows/gh-pages.deploy.yml`file.
