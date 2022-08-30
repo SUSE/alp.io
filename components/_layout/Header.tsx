@@ -32,24 +32,26 @@ export const Header = () => {
 
   return (
     <div className='relative bg-primary-light text-white dark:bg-secondary-dark dark:text-white py-2'>
-      <div className='grid grid-flow-row md:grid-flow-row mx-auto w-5/6 2xl:w-3/6'>
+      <div className='grid grid-flow-row place-self-end md:grid-flow-row mx-auto 2xl:w-3/6'>
         {/* Main Header */}
-        <div className='flex place-self-start md:place-self-end self-center gap-2 px-4 py-4'>
+        <div className='flex place-self-end md:place-self-end self-center gap-2 px-4 py-4'>
           <DocAndGitLinks />
 
-          <div className='relative flex self-center md:ml-2 group hover:cursor-pointer'>
-            <span className='hidden md:flex'>More from SUSE</span>
-            <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' strokeWidth='1.5' stroke='currentColor' className='flex md:hidden w-6 h-6'>
-              <path strokeLinecap='round' strokeLinejoin='round' d='M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5' />
-            </svg>
+          <div className='relative flex self-center align-middle md:ml-2 group hover:cursor-pointer'>
+            <div className='p-2 border border-opacity-20 rounded-md'>
+              <span className='hidden md:flex'>More from SUSE</span>
+              <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' strokeWidth='1.5' stroke='currentColor' className='flex md:hidden w-6 h-6'>
+                <path strokeLinecap='round' strokeLinejoin='round' d='M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5' />
+              </svg>
+            </div>
 
-            <div className='absolute -left-20 md:left-0 top-6 hidden group-hover:flex flex-col bg-primary-light bg-opacity-95  dark:bg-secondary-dark text-sm drop-shadow shadow-sm shadow- p-4 z-10 min-w-[180px] transition-all'>
+            <div className='absolute -left-20 md:left-0 top-10 hidden group-hover:flex flex-col bg-primary-light bg-opacity-95  dark:bg-secondary-dark text-sm drop-shadow shadow-sm shadow- p-4 z-10 min-w-[180px] transition-all'>
               <a rel='nofollow noreferrer' href='https://rancher.com/' target='_blank' className='flex gap-2 hover:ml-2 transition-all'>
                 <RancherLogoSVG className='w-4' />
                 Rancher
               </a>
 
-              <hr className='m-2 border-gray-400 border-opacity-20' />
+              <hr className='self-center m-2 border-gray-400 border-opacity-20' />
 
               <a rel='nofollow noreferrer' href='https://epinio.io/' target='_blank' className='flex py-2 gap-2 hover:ml-2 transition-all'>
                 <Image width={16} height={16} src={EpinioLogo.src} alt='' />
@@ -75,10 +77,10 @@ export const Header = () => {
             </div>
           </div>
 
-          <span className='opacity-20 mx-2'>|</span>
+          <span className='self-center opacity-20 mx-2'>|</span>
 
-          <button className='px-2 bg-white rounded-full transition-all' onClick={toggleTheme}>
-            <span>{theme === 'dark' ? '🌞' : '🌚'}</span>
+          <button className='flex self-center px-2 h-8 bg-white rounded-full transition-all' onClick={toggleTheme}>
+            <span className='self-center'>{theme === 'dark' ? '🌞' : '🌚'}</span>
           </button>
         </div>
       </div>
