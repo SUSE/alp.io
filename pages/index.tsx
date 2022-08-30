@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>NeuVector </title>
+        <title>NeuVector - OpenZeroTrust </title>
         <meta name='description' content='Continuously scan throughout the container lifecycle Remove security roadblocks Bake in security policies from the start' />
         {/** 👀 Replace with your custom favicon.ico */}
         <link rel='icon' href='/favicon.ico' />
@@ -28,10 +28,9 @@ export default function Home() {
             </motion.div>
 
             <div className='col-span-2'>
-              <VideoBox />
+              <VideoBox url='https://www.youtube.com/watch?v=_PHDXvygJtU' />
             </div>
           </div>
-          {/** 👀 Call to Action Box */}
         </div>
 
         {/** 👀 About section */}
@@ -103,7 +102,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/** 👀 Call to action */}
+        {/** 👀 Getting started section */}
         <div className='mx-auto w-5/6 2xl:w-3/6'>
           <p className='text-2xl my-4 text-left text-secondary-dark dark:text-primary'>Getting started</p>
           <div className='grid grid-flow-row md:grid-cols-3 gap-6'>
@@ -133,7 +132,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/** 👀 Call to action */}
+        {/** 👀 Get involved */}
         <div className='mx-auto w-5/6 2xl:w-3/6'>
           <div className='grid grid-flow-row md:grid-cols-2 gap-8 my-10'>
             <div className='flex flex-col gap-4 p-8 bg-gray-400 dark:bg-secondary-dark'>

@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import React from 'react'
 import ReactPlayer from 'react-player'
 
-export const VideoBox = () => {
+export const VideoBox = ({ url }: { url: string }) => {
   return (
     <motion.div
       initial={{
@@ -13,7 +13,7 @@ export const VideoBox = () => {
       className='grid  grid-gap-4 bg-blue-500 text-white '
     >
       <div className='relative'>
-        <ReactPlayer width='100%' url='https://www.youtube.com/watch?v=_PHDXvygJtU' controls={true} />
+        <ReactPlayer width='100%' url={url} controls={true} />
         <div className='absolute w-full bottom-0 h-2'>
           <motion.div
             initial={{
