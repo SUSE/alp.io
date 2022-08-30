@@ -6,7 +6,7 @@ import Head from 'next/head'
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <title>NeuVector - OpenZeroTrust </title>
         <meta name='description' content='Continuously scan throughout the container lifecycle Remove security roadblocks Bake in security policies from the start' />
@@ -17,7 +17,7 @@ export default function Home() {
       <main className='grid grid-flow-row gap-8 text-sm'>
         {/** 👀 Call to Action section */}
         <div className='dark:bg-customDark bg-gray-100 relative'>
-          <div className='grid grid-row-2 content-center align-middle gap-14 md:grid-cols-3 mx-auto w-5/6 2xl:w-3/6 py-20'>
+          <div className='grid grid-row-2 content-center align-middle gap-14 md:grid-cols-3 mx-auto w-5/6 2xl:w-4/6 py-20'>
             <motion.div initial='hidden' animate='visible' variants={motionListItems} className='self-center'>
               <div className='my-4'>
                 <NeuVectorSVG className='w-60 fill-current text-primary-light dark:text-primary my-4' />
@@ -36,7 +36,7 @@ export default function Home() {
         </div>
 
         {/** 👀 About section */}
-        <div className='grid gap-6 mx-auto w-5/6 2xl:w-3/6'>
+        <div className='grid gap-6 mx-auto w-5/6 2xl:w-4/6'>
           <div className='grid grid-flow-row md:grid-cols-3 gap-14 mb-10'>
             <div>
               <h2 className='text-secondary-dark dark:text-primary font-light text-lg'>Vulnerability Management</h2>
@@ -90,7 +90,7 @@ export default function Home() {
 
         {/** 👀 How to section */}
         <div className='dark:bg-secondary-dark bg-gray-100 relative'>
-          <div className='grid md:grid-cols-2 gap-4 m-16 mx-auto w-5/6 2xl:w-3/6'>
+          <div className='grid md:grid-cols-2 gap-4 m-16 mx-auto w-5/6 2xl:w-4/6'>
             <p className='text-secondary-dark dark:text-primary font-light text-3xl '>
               Container Security from Pipeline <br /> to Production
             </p>
@@ -105,7 +105,7 @@ export default function Home() {
         </div>
 
         {/** 👀 Getting started section */}
-        <div className='mx-auto w-5/6 2xl:w-3/6'>
+        <div className='mx-auto w-5/6 2xl:w-4/6'>
           <p className='text-2xl my-4 text-left text-secondary-dark dark:text-primary'>Getting started</p>
           <div className='grid grid-flow-row md:grid-cols-3 gap-6'>
             <div>
@@ -140,7 +140,7 @@ export default function Home() {
           </div>
         </div>
         {/** 👀 Get involved */}
-        <div className='mx-auto w-5/6 2xl:w-3/6'>
+        <div className='mx-auto w-5/6 2xl:w-4/6'>
           <div className='grid grid-flow-row md:grid-cols-2 gap-8 my-10'>
             <div className='flex flex-col gap-4 p-8 bg-gray-400 dark:bg-secondary-dark'>
               <p className='text-2xl mb-4 text-left text-secondary-dark dark:text-primary'>How to get involved</p>
@@ -175,6 +175,6 @@ export default function Home() {
           </div>
         </div>
       </main>
-    </div>
+    </>
   )
 }
