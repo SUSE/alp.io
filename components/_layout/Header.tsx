@@ -32,7 +32,7 @@ export const Header = () => {
 
   return (
     <div className='relative bg-primary-light text-white dark:bg-secondary-dark dark:text-white py-2'>
-      <div className='grid grid-flow-row place-self-end md:grid-flow-row mx-auto 2xl:w-3/6'>
+      <div className='grid grid-flow-row place-self-end md:grid-flow-row mx-auto 2xl:w-4/6'>
         {/* Main Header */}
         <div className='flex place-self-end md:place-self-end self-center gap-2 px-4 py-4'>
           <DocAndGitLinks />
