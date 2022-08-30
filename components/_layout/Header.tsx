@@ -45,7 +45,7 @@ export const Header = () => {
               </svg>
             </div>
 
-            <div className='absolute -left-20 md:left-0 top-10 group-hover:flex flex-col bg-primary-light bg-opacity-95  dark:bg-secondary-dark text-sm drop-shadow shadow-sm shadow- p-4 z-10 min-w-[180px] transition-all'>
+            <div className='absolute -left-20 md:left-0 top-10 hidden group-hover:flex flex-col bg-primary-light bg-opacity-95  dark:bg-secondary-dark text-sm drop-shadow shadow-sm shadow- p-4 z-10 min-w-[180px] transition-all'>
               <a rel='nofollow noreferrer' href='https://rancher.com/' target='_blank' className='flex gap-2 hover:ml-2 transition-all'>
                 <RancherLogoSVG className='w-4' />
                 Rancher
