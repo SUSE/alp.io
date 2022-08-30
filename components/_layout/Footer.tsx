@@ -3,7 +3,7 @@ import { DocAndGitLinks } from '../DocAndGitLinks'
 export const Footer = () => {
   return (
     <div className='bg-primary-light dark:bg-black text-white'>
-      <div className='grid grid-flow-row align-middle mx-auto w-5/6 2xl:w-3/6'>
+      <div className='grid grid-flow-row align-middle mx-auto w-5/6 2xl:w-4/6'>
         <div className='grid grid-flow-row md:grid-flow-col gap-4 justify-between items-center py-4'>
           <div className='flex gap-4 text-[12px]'>
             <DocAndGitLinks />
