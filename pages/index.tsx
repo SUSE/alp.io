@@ -1,6 +1,8 @@
 import { motionListItems } from '@/assets/animations'
-import { NeuVectorSVG } from '@/assets/images'
-import { VideoBox } from '@/components/VideoBox'
+// import { NeuVectorSVG } from '@/assets/images'
+// import { VideoBox } from '@/components/VideoBox'
+// import { SuseLogoSVG } from '@/assets/images'
+import { SuseLogoTest } from '@/assets/images'
 import { motion } from 'framer-motion'
 import Head from 'next/head'
 
@@ -8,29 +10,27 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>NeuVector - OpenZeroTrust </title>
-        <meta name='description' content='Continuously scan throughout the container lifecycle Remove security roadblocks Bake in security policies from the start' />
+        <title>Adaptable Linux Platform - ALP </title>
+        <meta name='description' content='The Next-Gen Linux' />
         {/** 👀 Replace with your custom favicon.ico */}
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
       <main className='grid grid-flow-row gap-8 text-sm'>
         {/** 👀 Call to Action section */}
-        <div className='dark:bg-customDark bg-gray-100 relative'>
+        <div className='light:bg-light bg-gray-100 relative'>
           <div className='grid grid-row-2 content-center align-middle gap-14 md:grid-cols-3 mx-auto w-5/6 2xl:w-4/6 py-20'>
             <motion.div initial='hidden' animate='visible' variants={motionListItems} className='self-center'>
               <div className='my-4'>
-                <NeuVectorSVG className='w-60 fill-current text-primary-light dark:text-primary my-4' />
+                <SuseLogoTest className='w-60 fill-current text-primary-light dark:text-primary my-4' />
               </div>
-              <p className='text-2xl font-thin text-left text-secondary-dark dark:text-primary'>Container security for cloud-native ecosystems</p>
-
-              <p className='mt-4'>
-                Continuously scan throughout the container lifecycle <br /> Remove security roadblocks <br /> Bake in security policies from the start
-              </p>
             </motion.div>
 
             <div className='col-span-2'>
-              <VideoBox url='https://www.youtube.com/watch?v=_PHDXvygJtU' />
+              <p className='text-2xl font-black text-black tracking-wide'>Adaptable Linux Platform</p>
+              <p className='mt-4 text-2xl font-thin text-left text-secondary-dark'>The Kubernetes workload focused OS</p>
+              <p className='mt-2 text-black font-'>Adaptable Linux Platform allow developers focus on the workloads while keep agnostic from the hardware and container runtime layers</p>
+              <img src="assets/images/alps.jpg"></img>
             </div>
           </div>
         </div>
@@ -39,23 +39,23 @@ export default function Home() {
         <div className='grid gap-6 mx-auto w-5/6 2xl:w-4/6'>
           <div className='grid grid-flow-row md:grid-cols-3 gap-14 mb-10'>
             <div>
-              <h2 className='text-secondary-dark dark:text-primary font-light text-lg'>Vulnerability Management</h2>
-              <p className='text-bold my-4 text-sm'>Scanning from pipeline to production.</p>
+              <h2 className='text-green-400 font-light text-lg'>Ease of Use</h2>
+              <p className='text-bold my-4 text-sm'>Productivity with fast ramp-up.</p>
               <motion.p className='grid grid-flow-row gap-4 text-sm font-thin' initial='hidden' animate='visible' variants={motionListItems}>
-                Continuously scan throughout the container lifecycle. Fast, accurate and scalable.
+                The Zero-Touch system, self-management, self-optimized for workloads, self-tuning, self-explaining 
               </motion.p>
             </div>
 
             <div>
-              <h2 className='text-secondary-dark dark:text-primary font-light text-lg'>Runtime Security</h2>
-              <p className='text-bold my-4 text-sm'>Zero trust for containers in production.</p>
+              <h2 className='text-green-400 font-light text-lg'>Anywhere</h2>
+              <p className='text-bold my-4 text-sm'>Run Anywhere, Anytime.</p>
               <motion.p className='grid grid-flow-row gap-4 text-sm font-thin' initial='hidden' animate='visible' variants={motionListItems}>
-                Block known and unknown threats with NeuVector’s patented container firewall technology. Protect your network, files, and processes.
+                From cloud environments, edge devices to entire data centers, with a minimun footprint and core, Adaptable Linux Platform wins at flexibility and agility
               </motion.p>
             </div>
 
             <div>
-              <h2 className='text-secondary-dark dark:text-primary font-light text-lg'>Supply Chain Security</h2>
+              <h2 className='text-green-400 font-light text-lg'>Supply Chain Security</h2>
               <p className='text-bold my-4 text-sm'>Shift security left without slowing down.</p>
               <motion.p className='grid grid-flow-row gap-4 text-sm font-thin' initial='hidden' animate='visible' variants={motionListItems}>
                 OpenZeroTrust covers the entire CI/CD pipeline with complete vulnerability management, compliance scanning, and admission controls.
@@ -63,7 +63,7 @@ export default function Home() {
             </div>
 
             <div>
-              <h2 className='text-secondary-dark dark:text-primary font-light text-lg'>Network Visibility</h2>
+              <h2 className='text-green-400 font-light text-lg'>Network Visibility</h2>
               <p className='text-bold my-4 text-sm'>360 degree view for 100% visibility.</p>
               <motion.p className='grid grid-flow-row gap-4 text-sm font-thin' initial='hidden' animate='visible' variants={motionListItems}>
                 Layer 7 visibility within and between pods, patented deep packet inspection to detect and block threats, and network mapping.
@@ -71,7 +71,7 @@ export default function Home() {
             </div>
 
             <div>
-              <h2 className='text-secondary-dark dark:text-primary font-light text-lg'>Container Segmentation</h2>
+              <h2 className='text-green-400 font-light text-lg'>Container Segmentation</h2>
               <p className='text-bold my-4 text-sm'>Protect PII. Essential for PCI and other mandates.</p>
               <motion.p className='grid grid-flow-row gap-4 text-sm font-thin' initial='hidden' animate='visible' variants={motionListItems}>
                 OpenZeroTrust creates a virtual wall to keep personal and private information securely isolated on your network.
@@ -79,7 +79,7 @@ export default function Home() {
             </div>
 
             <div>
-              <h2 className='text-secondary-dark dark:text-primary font-light text-lg'>Compliance</h2>
+              <h2 className='text-green-400 font-light text-lg'>Compliance</h2>
               <p className='text-bold my-4 text-sm'>Exceed the standards. DLP included.</p>
               <motion.p className='grid grid-flow-row gap-4 text-sm font-thin' initial='hidden' animate='visible' variants={motionListItems}>
                 We you covered with automated, audit-ready compliance assessment and reporting. Sail through PCI, SOC2 and other audits with less stress.
