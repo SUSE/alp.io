@@ -31,8 +31,11 @@ export const Header = () => {
   }, [theme, updateTheme])
 
   return (
-    <nav className='flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-4 text-lg text-gray-700 bg-green-500'>
+    <nav className='flex flex-wrap justify-between w-full py-4 md:py-0 px-4 text-lg text-gray-700 bg-green-500'>
       <SuseLogoWhite></SuseLogoWhite>
+      <p className='text-white text-sm'>Docs</p>
+      <p>Get Involved!</p>
+      <p></p>
     </nav>
   )
 }
