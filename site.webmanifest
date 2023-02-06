@@ -1,0 +1,14 @@
+{
+    "name": "ALP - Adaptable Linux Platform",
+    "short_name": "The Next-Gen workload focused Linux Platform",
+    "icons": [
+        {
+            "src": "/android-chrome-96x96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#FFFF33",
+    "background_color": "#12181A",
+    "display": "standalone"
+}
