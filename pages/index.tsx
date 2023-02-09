@@ -38,10 +38,10 @@ export default function Home() {
         <div className='grid gap-6 mx-auto w-5/6 2xl:w-4/6'>
           <div className='grid grid-flow-row md:grid-cols-3 gap-14 mb-10'>
             <div>
-              <h2 className='text-green-400 font-light text-lg'>Ease of Use</h2>
+              <h2 className='text-green-400 font-light text-lg'>OSaaS - Operating System as a Service</h2>
               <p className='text-bold my-4 text-sm'>Productivity with fast ramp-up.</p>
               <motion.p className='grid grid-flow-row gap-4 text-sm font-thin' initial='hidden' animate='visible' variants={motionListItems}>
-                The Zero-Touch system, self-management, self-optimized for workloads, self-tuning, self-explaining 
+                Zero-touch, self-managed, self-healing, zero-downtime OS-as-a-Service
               </motion.p>
             </div>
 
@@ -54,34 +54,34 @@ export default function Home() {
             </div>
 
             <div>
-              <h2 className='text-green-400 font-light text-lg'>Supply Chain Security</h2>
-              <p className='text-bold my-4 text-sm'>Shift security left without slowing down.</p>
+              <h2 className='text-green-400 font-light text-lg'>Workload-centric OS</h2>
+              <p className='text-bold my-4 text-sm'>Focused on the Workloads.</p>
               <motion.p className='grid grid-flow-row gap-4 text-sm font-thin' initial='hidden' animate='visible' variants={motionListItems}>
-                OpenZeroTrust covers the entire CI/CD pipeline with complete vulnerability management, compliance scanning, and admission controls.
+                Adaptable Linux Platform is designed with containerized workloads in the center abstracting workloads from OS and container runtime layers
               </motion.p>
             </div>
 
             <div>
-              <h2 className='text-green-400 font-light text-lg'>Network Visibility</h2>
-              <p className='text-bold my-4 text-sm'>360 degree view for 100% visibility.</p>
+              <h2 className='text-green-400 font-light text-lg'>Confidential Computing</h2>
+              <p className='text-bold my-4 text-sm'>Run Applications Securely.</p>
               <motion.p className='grid grid-flow-row gap-4 text-sm font-thin' initial='hidden' animate='visible' variants={motionListItems}>
-                Layer 7 visibility within and between pods, patented deep packet inspection to detect and block threats, and network mapping.
+                Protects data in use by performing the computation in a hardware-based, attested Trusted Execution Environment. These secure and isolated environments prevent unauthorized access or modification of applications and data while in use, thereby increasing the security assurances for organizations that manage sensitive and regulated data.
               </motion.p>
             </div>
 
             <div>
-              <h2 className='text-green-400 font-light text-lg'>Container Segmentation</h2>
-              <p className='text-bold my-4 text-sm'>Protect PII. Essential for PCI and other mandates.</p>
+              <h2 className='text-green-400 font-light text-lg'>Immutable OS</h2>
+              <p className='text-bold my-4 text-sm'>Transactional updates and read-only root filesystem.</p>
               <motion.p className='grid grid-flow-row gap-4 text-sm font-thin' initial='hidden' animate='visible' variants={motionListItems}>
-                OpenZeroTrust creates a virtual wall to keep personal and private information securely isolated on your network.
+                Stable immutable base operating system that utilizes transactions when modifying the file system.
               </motion.p>
             </div>
 
             <div>
-              <h2 className='text-green-400 font-light text-lg'>Compliance</h2>
-              <p className='text-bold my-4 text-sm'>Exceed the standards. DLP included.</p>
+              <h2 className='text-green-400 font-light text-lg'>Easy to use</h2>
+              <p className='text-bold my-4 text-sm'>Administer and Manage Easily.</p>
               <motion.p className='grid grid-flow-row gap-4 text-sm font-thin' initial='hidden' animate='visible' variants={motionListItems}>
-                We you covered with automated, audit-ready compliance assessment and reporting. Sail through PCI, SOC2 and other audits with less stress.
+                A Web-based graphical interface to administer single or multiple ALP workloads from one place. It helps you manage, for example, user accounts, network settings, or container orchestration.
               </motion.p>
             </div>
           </div>
