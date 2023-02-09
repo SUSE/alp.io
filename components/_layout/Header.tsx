@@ -31,11 +31,23 @@ export const Header = () => {
   }, [theme, updateTheme])
 
   return (
-    <nav className='flex flex-wrap justify-between w-full py-4 md:py-0 px-4 text-lg text-gray-700 bg-green-500'>
-      <SuseLogoWhite></SuseLogoWhite>
-      <p className='text-white text-sm'>Docs</p>
-      <p>Get Involved!</p>
-      <p></p>
-    </nav>
+  <div className="bg-green-500">
+  {/* <div className="max-w-7xl py-3 px-3 sm:px-6 lg:px-8"> */}
+  <div className="">
+    <div className="flex flex-wrap items-center">
+      <div className="flex flex-1 wd-0 items-center">
+        <span className="ml-10 items-center">
+          <SuseLogoWhite></SuseLogoWhite>
+        </span>
+      </div>
+      <div className="items-center flex mr-10 flex-wrap space-x-4 justify-between">
+        <a className="font-medium items-center text-white" href="https://en.opensuse.org/images/6/62/OpenALT2022-AdaptableLinuxPlatform.pdf">Community</a>
+        <a className="font-medium items-center text-white" href="https://documentation.suse.com/alp/all/single-html/alp/index.html">Docs!</a>
+        <a href="https://suse.com" className="flex my-4 items-center justify-center rounded-md border border-transparent bg-white px-10 py-2 text-sm font-medium text-sans text-sm shadow-sm hover:bg-indigo-50">SUSE</a>
+      </div>
+    </div>
+  </div>
+</div>
+
   )
 }
