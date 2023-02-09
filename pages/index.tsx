@@ -17,17 +17,20 @@ export default function Home() {
       </Head>
       <main className='grid grid-flow-row gap-8 text-sm'>
         {/** 👀 Call to Action section */}
-        <div className='grid grid-rows-1 pl-5 text-left light:bg-light bg-gray-100 relative grid-cols-3'>
-            <div className='col-span-1'>
-              <p className='max-w-lt mt-10 text-4xl font-black text-black tracking-wide'>Adaptable Linux Platform</p>
+        <div className='pl-10 pb-20 text-left light:bg-light bg-gray-100 relative'>
+            <div className='col-span-2'>
+              <p className='max-w-lt mt-20 text-4xl font-black text-black tracking-wide'>Adaptable Linux Platform</p>
               <p className='max-w-md mt-5 text-2xl font-thin text-secondary-dark'>The Kubernetes workload focused OS</p>
               <p className='max-w-md mt-4 text-black text-lg'>Adaptable Linux Platform allow developers focus on the workloads while keep agnostic from the hardware and container runtime layers</p>
-              <a href="https://download.opensuse.org/repositories/SUSE:/ALP:/PUBLISH/images/" className="mt-28 inline-flex items-center justify-center p-5 text-base font-medium text-white bg-green-400 rounded-lg">
-                <span className="w-full">Get started with Adaptable Linux Platform, download here!</span>
-              </a>
             </div>
-            <div className='relative col-span-2 max-w-lg mt-8'>
-              <VideoBox url='https://www.youtube.com/watch?v=1eBjuYhAh4k' />
+            <div className='mt-5'>
+              {/* <a href="#" className="inline-flex items-center justify-center p-5 text-base font-medium text-black rounded-lg bg-white hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white"> */}
+              <a href="https://download.opensuse.org/repositories/SUSE:/ALP:/PUBLISH/images/" className="inline-flex items-center justify-center p-5 text-base font-medium text-white bg-green-400 rounded-lg">
+                <span className="w-full">Get started with Adaptable Linux Platform, download here!</span>
+              </a> 
+            </div>
+            <div className='col-span-2 object-right'>
+              {/* <VideoBox url='https://www.youtube.com/watch?v=1eBjuYhAh4k' /> */}
             </div>
         </div>
 
