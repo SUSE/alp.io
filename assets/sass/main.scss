@@ -7,6 +7,8 @@
 //     --light           : #ffffff;
 //   }
 
+
+
 :root {
     --primary-color   : #30BA78;
     --secondary-color : #173F4F;
@@ -44,6 +46,39 @@ section.wrap h3 {
 section.wrap p {
   font-size: 1.8rem;
   line-height: 2.8rem;
+}
+
+
+
+//Thin intro 
+.introthin {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 0;
+
+  .grid-two {
+    grid-template-columns: 60% auto;
+  }
+
+  .wrap {
+    padding: 5rem 0 12ren 0;
+  }
+
+  .folder {
+    grid-row: 5 / span 3;
+    grid-column: 2 / span 4;
+    z-index: 2;
+  }
+
+  .bg-primary {
+    grid-row: 2 / span 4;
+    grid-column: 1 / span 6;
+    color: var(--dark);
+  }
+}
+.introthin h1 a {
+  color: white;
+  text-decoration: none;
 }
 
 .font-weight-light {

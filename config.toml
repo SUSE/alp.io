@@ -24,8 +24,8 @@ vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
 params = ["categories", "tags"]
 
 [params]
-   github = "https://build.opensuse.org/project/show/SUSE:ALP"
-#https://build.opensuse.org/assets/obs-logo_small-61fe1c95f4fe24dce4709b1b8b5d317c2b3897fbf45136c0026309e46fcf3ec7.svg
+github = "https://build.opensuse.org/project/show/SUSE:ALP"
+
 [outputs]
 home = ["HTML", "RSS", "Algolia"]
 
@@ -41,8 +41,9 @@ home = ["HTML", "RSS", "Algolia"]
 
   [[menu.main]]
     identifier = "download"
-    name = "Download"
-    url = "https://download.opensuse.org/repositories/SUSE:/ALP:/Products:/"
+    name = "Downloads"
+    ##url = "https://download.opensuse.org/repositories/SUSE:/ALP:/Products:/"
+    url = "downloads/"
     weight = -130
 
   [[menu.main]]
