@@ -26,7 +26,7 @@ SUSE ALP Micro 1.0 Milestone 1 has been released!
 
 ## Download links
 
-https://updates.suse.de/SUSE/Products/ALP-Micro/1.0/x86_64/ALP-Micro.x86_64-1.0-Default-Milestone1.raw.xz
+https://updates.suse.com/SUSE/Products/ALP-Micro/1.0/x86_64/ALP-Micro.x86_64-1.0-Default-Milestone1.raw.xz
 
 https://updates.suse.com/SUSE/Products/ALP-Micro/1.0/x86_64/ALP-Micro.x86_64-1.0-Default-qcow-Milestone1.qcow2
 
