@@ -13,9 +13,13 @@ The testing ISOs for Agama are available here. The comprehensive guides for usin
 # Download links
 
 https://updates.suse.com/SUSE/Products/ALP-Dolomite/1.0/x86_64/ALP-Dolomite.aarch64-1.0-Default-Milestone2.raw.xz
+
 https://updates.suse.com/SUSE/Products/ALP-Dolomite/1.0/x86_64/ALP-Dolomite.x86_64-1.0-Default-Milestone2.raw.xz
+
 https://updates.suse.com/SUSE/Products/ALP-Dolomite/1.0/x86_64/ALP-Dolomite.x86_64-1.0-Default-qcow-Milestone2.qcow2
+
 https://updates.suse.com/SUSE/Products/ALP-Dolomite/1.0/x86_64/iso/ALP-Dolomite.x86_64-1.0-Default-SelfInstall-Milestone2.install.iso
+
 https://updates.suse.com/SUSE/Products/ALP-Dolomite/1.0/x86_64/ALP-Dolomite.s390x-1.0-Default-fba-Milestone2.raw.xz
 
 
