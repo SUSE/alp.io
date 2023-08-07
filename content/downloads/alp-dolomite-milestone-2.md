@@ -8,7 +8,7 @@ This is an Alpha release. Please use it at your own risk and discretion. Not all
 
 The package repository is publicly available at https://updates.suse.com/SUSE/Products/ALP-Dolomite/1.0/<<basearch>>/product/ . It is already preconfigured in all images. Beware CDN doesn't allow to browse the directory.
 
-The testing ISOs for Agama are available [here](https://download.opensuse.org/repositories/systemsmanagement:/Agama:/Devel/images/iso/). The comprehensive guides for using Agama can be found in this post and in the documentation.
+The testing ISOs for Agama are available [here](https://download.opensuse.org/repositories/systemsmanagement:/Agama:/Devel/images/iso/). The comprehensive guides for using Agama can be found in [this post](https://yast-branch-dinstaller09.surge.sh/blog/2023-08-03/agama3) and [in the documentation](https://documentation.suse.com/alp/dolomite/html/alp-dolomite/concept-alp-deployment.html).
 
 # Download links
 
