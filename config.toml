@@ -42,7 +42,6 @@ home = ["HTML", "RSS", "Algolia"]
   [[menu.main]]
     identifier = "download"
     name = "Downloads"
-    ##url = "https://download.opensuse.org/repositories/SUSE:/ALP:/Products:/"
     url = "downloads/"
     weight = -130
 
