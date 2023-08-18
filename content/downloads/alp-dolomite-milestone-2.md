@@ -1,5 +1,5 @@
 ---
-title: "ALP Dolomite Milestone 2"
+title: "ALP Dolomite 1.0 Milestone 2"
 date: 2023-08-07
 ---
 Advanced Linux Platform (ALP) Dolomite 1.0 Milestone 2 has been released!
