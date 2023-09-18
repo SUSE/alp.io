@@ -18,11 +18,14 @@ https://updates.suse.com/SUSE/Products/ALP-Dolomite/1.0/aarch64/ALP-Dolomite.aar
 
 https://updates.suse.com/SUSE/Products/ALP-Dolomite/1.0/x86_64/ALP-Dolomite.x86_64-1.0-Default-Milestone4.raw.xz 
 
+https://updates.suse.com/SUSE/Products/ALP-Dolomite/1.0/x86_64/ALP-Dolomite.x86_64-1.0-Default-encrypted-Milestone4.raw
+
 https://updates.suse.com/SUSE/Products/ALP-Dolomite/1.0/x86_64/ALP-Dolomite.x86_64-1.0-Default-qcow-Milestone4.qcow2 
 
 https://updates.suse.com/SUSE/Products/ALP-Dolomite/1.0/x86_64/iso/ALP-Dolomite.x86_64-1.0-Default-SelfInstall-Milestone4.install.iso 
 
 https://updates.suse.com/SUSE/Products/ALP-Dolomite/1.0/s390x/ALP-Dolomite.s390x-1.0-Default-fba-Milestone4.raw.xz 
+
 
 ## Agama Installer images
 
