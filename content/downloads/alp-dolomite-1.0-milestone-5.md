@@ -8,7 +8,7 @@ Adaptable Linux Platform (ALP) Dolomite 1.0 Milestone 5 has been released!
 
 This is a Milestone 5 release. Please use it at your own risk and discretion. Not all architectures are supported.
 
-The package repository is publicly available at https://updates.suse.com/SUSE/Products/ALP-Dolomite/1.0/<basearch>/product/ . It is already preconfigured in all images. Beware CDN doesn't allow browsing the directory.
+The package repository is publicly available at https://updates.suse.com/SUSE/Products/ALP-Dolomite/1.0/-basearch-/product/ . It is already preconfigured in all images. Beware CDN doesn't allow browsing the directory.
 
 # Download links
 
