@@ -24,6 +24,7 @@ https://updates.suse.com/SUSE/Products/ALP-Dolomite/1.0/x86_64/iso/ALP-Dolomite.
 
 https://updates.suse.com/SUSE/Products/ALP-Dolomite/1.0/s390x/ALP-Dolomite.s390x-1.0-Default-fba-Milestone5.raw.xz 
 
+https://updates.suse.com/SUSE/Products/ALP-Dolomite/1.0/s390x/ALP-Dolomite.x86_64-1.0-Default-SelfInstall-Milestone5.raw.xz
 
 ## Agama Installer images
 
