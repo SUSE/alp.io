@@ -28,14 +28,13 @@ https://updates.suse.com/SUSE/Products/ALP-Dolomite/1.0/s390x/ALP-Dolomite.x86_6
 
 ## Agama Installer images
 
-https://updates.suse.com/SUSE/Products/ALP-Installer/1.0/aarch64/iso/agama-live.aarch64-3.0.0-ALP-GM.iso
+https://updates.suse.com/SUSE/Products/ALP-Installer/1.0/aarch64/iso/agama-live.aarch64-3.0.0-ALP-Milestone5.iso 
 
-https://updates.suse.com/SUSE/Products/ALP-Installer/1.0/ppc64le/iso/agama-live.ppc64le-3.0.0-ALP-GM.iso
+https://updates.suse.com/SUSE/Products/ALP-Installer/1.0/ppc64le/iso/agama-live.ppc64le-3.0.0-ALP-Milestone5.iso 
 
-https://updates.suse.com/SUSE/Products/ALP-Installer/1.0/s390x/iso/agama-live.s390x-3.0.0-ALP-GM.iso
+https://updates.suse.com/SUSE/Products/ALP-Installer/1.0/s390x/iso/agama-live.s390x-3.0.0-ALP-Milestone5.iso 
 
-https://updates.suse.com/SUSE/Products/ALP-Installer/1.0/x86_64/iso/agama-live.x86_64-3.0.0-ALP-GM.iso
-
+https://updates.suse.com/SUSE/Products/ALP-Installer/1.0/x86_64/iso/agama-live.x86_64-3.0.0-ALP-Milestone5.iso 
 
 
 # Notable Changes
