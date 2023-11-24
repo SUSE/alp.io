@@ -42,7 +42,6 @@ https://updates.suse.com/SUSE/Products/ALP-Installer/1.0/x86_64/iso/agama-live.x
 As a Milestone 6, we still do not provide a comprehensive list of changes. But here are some notable changes: 
 
 * number of packages have been updated 
-
 * added fixes for known issues from Milestone 5 
 
 
@@ -51,9 +50,6 @@ As a Milestone 6, we still do not provide a comprehensive list of changes. But h
 Also there are following issues identified: 
 
 * Milestone 6 release reports itself as Milestone 5 
-
 * Media Content https://bugzilla.suse.com/show_bug.cgi?id=1216416 : Core utilities/packages are missing 
-
 * Security - https://bugzilla.suse.com/show_bug.cgi?id=1217361 : missing crypto-policies-scripts package 
-
 * Security - https://bugzilla.suse.com/show_bug.cgi?id=1213798 : missing package + missing pattern 
