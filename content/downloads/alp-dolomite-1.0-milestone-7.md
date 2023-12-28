@@ -30,18 +30,14 @@ https://updates.suse.com/SUSE/Products/ALP-Dolomite/1.0/x86_64/ALP-Dolomite.x86_
 
 
 ## Notable Changes
-
 As a Milestone 7 , we still do not provide a comprehensive list of changes. But here are some notable changes:
-
 * Agama installer has been excluded from Dolomite specification.
 * Starting this Milestone it is not a part of Dolomite delivery. For installation, bootable images must be used.
 * Number of packages have been updated
 * Added fixes for known issues from Milestone 6 
 
 ## Known issues
-
 Also there are following issues identified:
-
 * Base - https://bugzilla.suse.com/show_bug.cgi?id=1217872 : [SELinux] sedispatch fails to sent AVCs to system_bus_socket 
 * Kernel - https://bugzilla.suse.com/show_bug.cgi?id=1196298 : Overcommited memory protection manifests counter-intuitive effective values
 * Kernel - https://bugzilla.suse.com/show_bug.cgi?id=1217514 :  fstests generic/007 fails on all filesystems in dolomite
