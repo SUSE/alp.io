@@ -4,15 +4,15 @@ date: 2023-12-14
 ---
 Adaptable Linux Platform (ALP) Dolomite 1.0 Milestone 7 has been released!
 
-# Important notice
+## Important notice
 
 This is a Milestone 7 release. Please use it at your own risk and discretion. Not all architectures are supported.
 
 The package repository is publicly available at https://updates.suse.com/SUSE/Products/ALP-Dolomite/1.0/-basearch-/product/ . It is already preconfigured in all images. Beware CDN doesn't allow browsing the directory.
 
-# Download links
+## Download links
 
-## Dolomite 1.0 Milestone 7
+### Dolomite 1.0 Milestone 7
 
 https://updates.suse.com/SUSE/Products/ALP-Dolomite/1.0/x86_64/ALP-Dolomite.x86_64-1.0-Default-encrypted-Milestone7.raw 
 
@@ -29,7 +29,7 @@ https://updates.suse.com/SUSE/Products/ALP-Dolomite/1.0/s390x/ALP-Dolomite.s390x
 https://updates.suse.com/SUSE/Products/ALP-Dolomite/1.0/x86_64/ALP-Dolomite.x86_64-1.0-Default-SelfInstall-Milestone7.raw.xz 
 
 
-# Notable Changes
+## Notable Changes
 
 As a Milestone 7 , we still do not provide a comprehensive list of changes. But here are some notable changes:
 
@@ -38,7 +38,7 @@ As a Milestone 7 , we still do not provide a comprehensive list of changes. But 
 * Number of packages have been updated
 * Added fixes for known issues from Milestone 6 
 
-# Known issues
+## Known issues
 
 Also there are following issues identified:
 
