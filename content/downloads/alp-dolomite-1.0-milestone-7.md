@@ -28,6 +28,7 @@ https://updates.suse.com/SUSE/Products/ALP-Dolomite/1.0/s390x/ALP-Dolomite.s390x
 
 https://updates.suse.com/SUSE/Products/ALP-Dolomite/1.0/x86_64/ALP-Dolomite.x86_64-1.0-Default-SelfInstall-Milestone7.raw.xz 
 
+
 # Notable Changes
 
 As a Milestone 7 , we still do not provide a comprehensive list of changes. But here are some notable changes:
