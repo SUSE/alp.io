@@ -53,8 +53,8 @@ home = ["HTML", "RSS", "Algolia"]
 
   [[menu.main]]
     identifier = "blog"
-    name = "Blog"
-    url = "https://www.suse.com/c/?s=ALP"
+    name = "Blogs"
+    url = "https://www.suse.com/c/tag/alp/"
     weight = -70
 
  [[menu.main]]
