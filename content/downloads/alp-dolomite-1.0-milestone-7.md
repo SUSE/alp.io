@@ -33,16 +33,23 @@ https://updates.suse.com/SUSE/Products/ALP-Dolomite/1.0/x86_64/ALP-Dolomite.x86_
 
 As a Milestone 7 , we still do not provide a comprehensive list of changes. But here are some notable changes:
 
-* Agama installer has been excluded from Dolomite specification.
-* Starting this Milestone it is not a part of Dolomite delivery. For installation, bootable images must be used.
-* Number of packages have been updated
-* Added fixes for known issues from Milestone 6 
+ &#8226; Agama installer has been excluded from Dolomite specification.
+
+ &#8226; Starting this Milestone it is not a part of Dolomite delivery. For installation, bootable images must be used.
+
+ &#8226; Number of packages have been updated
+
+ &#8226; Added fixes for known issues from Milestone 6 
+
 
 # Known issues
 
 Also there are following issues identified:
 
-* Base - https://bugzilla.suse.com/show_bug.cgi?id=1217872 : [SELinux] sedispatch fails to sent AVCs to system_bus_socket 
-* Kernel - https://bugzilla.suse.com/show_bug.cgi?id=1196298 : Overcommited memory protection manifests counter-intuitive effective values
-* Kernel - https://bugzilla.suse.com/show_bug.cgi?id=1217514 :  fstests generic/007 fails on all filesystems in dolomite
-* Kernel - https://bugzilla.suse.com/show_bug.cgi?id=1217516 : fstests xfs/188 fails in dolomite
+ &#8226; Base - https://bugzilla.suse.com/show_bug.cgi?id=1217872 : [SELinux] sedispatch fails to sent AVCs to system_bus_socket 
+
+ &#8226; Kernel - https://bugzilla.suse.com/show_bug.cgi?id=1196298 : Overcommited memory protection manifests counter-intuitive effective values
+
+ &#8226; Kernel - https://bugzilla.suse.com/show_bug.cgi?id=1217514 :  fstests generic/007 fails on all filesystems in dolomite
+
+ &#8226; Kernel - https://bugzilla.suse.com/show_bug.cgi?id=1217516 : fstests xfs/188 fails in dolomite
