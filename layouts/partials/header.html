@@ -20,7 +20,7 @@
 
       <ul class="menu">
         {{ range . }}
-        <li><a href="{{ .URL }}" ztarget="_blank" class="btn no-bg">{{ .Name }}</a></li>
+        <li><a href="{{ .URL }}" target="_blank" class="btn no-bg">{{ .Name }}</a></li>
         {{ end }}
         <!-- github  -->
         <li><a href="{{ $.Site.Params.github }}" target="_blank" class="btn github"><img src="images/icon-obs.svg"><span>OBS</span></a>
